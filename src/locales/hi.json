@@ -28,8 +28,16 @@
         "brushed": "ब्रश किया हुआ"
     },
     "catalog": {
-        "title": "सूची",
-        "browse": "यहां हमारी सूची ब्राउज़ करें।"
+        "title": "उत्पाद सूची",
+        "subtitle": "गुणवत्ता वाले धातु उत्पादों का हमारा संपूर्ण संग्रह ब्राउज़ करें",
+        "search_placeholder": "उत्पाद, श्रेणियां, या विवरण खोजें...",
+        "all_categories": "सभी श्रेणियां",
+        "products_count": "{{count}} उत्पाद",
+        "no_results": "आपकी खोज से मेल खाने वाला कोई उत्पाद नहीं मिला",
+        "clear_search": "खोज साफ़ करें",
+        "category_hangers": "हैंगर (खूंटी)",
+        "category_cabinet_handle": "कैबिनेट हैंडल",
+        "category_knobs": "नॉब्स"
     },
     "contact": {
         "reach_out": "संपर्क करें",

@@ -28,8 +28,16 @@
         "brushed": "Brushed"
     },
     "catalog": {
-        "title": "Catalog",
-        "browse": "Browse our catalog here."
+        "title": "Product Catalog",
+        "subtitle": "Browse our complete collection of quality metal products",
+        "search_placeholder": "Search products, categories, or descriptions...",
+        "all_categories": "All Categories",
+        "products_count": "{{count}} products",
+        "no_results": "No products found matching your search",
+        "clear_search": "Clear search",
+        "category_hangers": "Hangers (Khuti)",
+        "category_cabinet_handle": "Cabinet Handle",
+        "category_knobs": "Knobs"
     },
     "contact": {
         "reach_out": "Reach out",
