@@ -37,7 +37,20 @@
         "clear_search": "Clear search",
         "category_hangers": "Hangers (Khuti)",
         "category_cabinet_handle": "Cabinet Handle",
-        "category_knobs": "Knobs"
+        "category_knobs": "Knobs",
+        "variants": "variants",
+        "product_desc_rk101": "Durable metal wall hanger with multiple hooks for versatile use.",
+        "product_desc_rk102": "Lightweight plastic coat hanger with a sleek design.",
+        "product_desc_rk103": "Elegant wooden hanger perfect for jackets and coats.",
+        "product_desc_rk104": "Elegant wooden hanger perfect for jackets and coats.",
+        "product_desc_rk105": "Sleek stainless steel cabinet handle with a brushed finish.",
+        "product_desc_rk106": "Antique brass handle with a traditional vintage design.",
+        "product_desc_rk107": "Modern square-shaped handle with a matte black finish.",
+        "product_desc_rk108": "Curved chrome handle for cabinets, ideal for a sleek and modern look.",
+        "product_desc_rk110": "Round ceramic knob with hand-painted floral design, ideal for drawers and cabinets.",
+        "product_desc_rk111": "Vintage-style brass knob with an antique finish, suitable for all types of furniture.",
+        "product_desc_rk112": "Glass crystal knob with a luxurious, sparkling finish, perfect for modern interiors.",
+        "product_desc_rk113": "Minimalist wooden knob with a smooth matte finish, perfect for natural-themed decor."
     },
     "contact": {
         "reach_out": "Reach out",

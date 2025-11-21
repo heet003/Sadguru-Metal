@@ -161,16 +161,16 @@ function Catalog() {
                 </h3>
 
                 <p className="text-sm text-[#0a0906]/70 mb-4 line-clamp-2 flex-grow">
-                  {product.productDescription}
+                  {t(`catalog.product_desc_${product.productId.toLowerCase()}`)}
                 </p>
 
-                <div className="flex items-center justify-between mt-auto pt-4 border-t border-[#0a0906]/10">
-                  <span className="text-xl font-semibold text-[#0a0906]">
+                <div className="flex items-end justify-end mt-auto pt-4 border-t border-[#0a0906]/10">
+                  {/* <span className="text-xl font-semibold text-[#0a0906]">
                     ₹{product.price}
-                  </span>
+                  </span> */}
                   {product.variants && (
                     <span className="text-xs text-[#0a0906]/50">
-                      {product.variants.length} variants
+                      {product.variants.length} {t('catalog.variants')}
                     </span>
                   )}
                 </div>
