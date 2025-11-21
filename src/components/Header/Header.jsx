@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "../../ui/button";
-import Navbar from "../Navbar/Navbar";
+import logo from '../../assets/metal/2.png';
 
 const Header = () => {
   return (
@@ -61,7 +61,7 @@ const Header = () => {
           <img
             className="flex-1 h-[640px] object-cover opacity-0 animate-fade-in delay-600"
             alt="Placeholder"
-            src="https://c.animaapp.com/mi5h3b24iyxDIZ/img/placeholder-image.png"
+            src={logo}
           />
         </article>
       </div>

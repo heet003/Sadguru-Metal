@@ -1,42 +1,47 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import img1 from '../assets/metal/6.png';
+import img2 from '../assets/metal/7.png';
+import img3 from '../assets/metal/8.png';
+import img4 from '../assets/metal/9.png';
+import img5 from '../assets/metal/10.png';
+import img6 from '../assets/metal/11.png';
 const products = [
   {
     title: "Chrome towel bar",
     finish: "Polished",
     price: "$48",
-    img: "https://images.unsplash.com/photo-1557682250-33bd709cbe85",
+    img: img1,
   },
   {
     title: "Brushed door handle",
     finish: "Satin",
     price: "$32",
-    img: "https://images.unsplash.com/photo-1594818375337-534c0c43af92",
+    img: img2,
   },
   {
     title: "Cabinet knob set",
     finish: "Matte",
     price: "$56",
-    img: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91",
+    img: img3,
   },
   {
     title: "Soap dispenser",
     finish: "Chrome",
     price: "$42",
-    img: "https://images.unsplash.com/photo-1544717305-996b815c338c",
+    img: img4,
   },
   {
     title: "Mirror frame bar",
     finish: "Brushed",
     price: "$64",
-    img: "https://images.unsplash.com/photo-1533228100845-08145b01de14",
+    img: img5,
   },
   {
     title: "Lever door handle",
     finish: "Polished",
     price: "$38",
-    img: "https://images.unsplash.com/photo-1503602642458-232111445657",
+    img: img6,
   },
 ];
 
@@ -58,16 +63,16 @@ const Products = () => {
           <div key={index} className="flex flex-col items-center text-center">
 
             <img
-              src={item.img}
-              alt={item.title}
+              src={item?.img}
+              alt={item?.title}
               className="w-full h-[360px] object-cover rounded"
             />
 
-            <h3 className="text-xl font-medium mt-6">{item.title}</h3>
+            <h3 className="text-xl font-medium mt-6">{item?.title}</h3>
 
-            <p className="text-[#0a0906]/70 text-sm">{item.finish}</p>
+            <p className="text-[#0a0906]/70 text-sm">{item?.finish}</p>
 
-            <p className="text-xl font-semibold mt-2">{item.price}</p>
+            {/* <p className="text-xl font-semibold mt-2">{item?.price}</p> */}
           </div>
         ))}
 
