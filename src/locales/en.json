@@ -1,0 +1,44 @@
+{
+    "nav": {
+        "products": "Products",
+        "catalog": "Catalog",
+        "contact": "Contact Us"
+    },
+    "home": {
+        "hero_title": "Built strong. Made to endure.",
+        "hero_description": "We craft metal products that work hard and look good doing it. From bathroom fixtures to cabinet hardware, every piece is engineered for reliability.",
+        "browse": "Browse",
+        "learn_more": "Learn more"
+    },
+    "products": {
+        "featured": "Featured",
+        "title": "Products",
+        "subtitle": "Hand-selected pieces that represent our best work",
+        "view_catalog": "View catalog",
+        "chrome_towel_bar": "Chrome towel bar",
+        "brushed_door_handle": "Brushed door handle",
+        "cabinet_knob_set": "Cabinet knob set",
+        "soap_dispenser": "Soap dispenser",
+        "mirror_frame_bar": "Mirror frame bar",
+        "lever_door_handle": "Lever door handle",
+        "polished": "Polished",
+        "satin": "Satin",
+        "matte": "Matte",
+        "chrome": "Chrome",
+        "brushed": "Brushed"
+    },
+    "catalog": {
+        "title": "Catalog",
+        "browse": "Browse our catalog here."
+    },
+    "contact": {
+        "reach_out": "Reach out",
+        "title": "Get in touch",
+        "subtitle": "We're here to help with orders, questions, or custom requests.",
+        "email": "Email",
+        "email_text": "Send us a message",
+        "phone": "Phone",
+        "phone_text": "Call during business hours",
+        "office": "Office"
+    }
+}

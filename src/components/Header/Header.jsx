@@ -1,8 +1,11 @@
 import React from "react";
 import { Button } from "../../ui/button";
-import logo from '../../assets/metal/2.png';
+import { images } from "../../utlis/data";
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="flex flex-col items-center gap-20 px-12 py-16 bg-[#f2f2f2]">
       <div className="flex flex-col max-w-7xl items-start justify-center gap-20 w-full">
@@ -12,13 +15,11 @@ const Header = () => {
             {/* HEADER TEXT */}
             <header className="flex flex-col items-start gap-6 w-full">
               <h1 className="text-5xl font-bold text-[#0a0906] leading-tight opacity-0 -translate-y-4 animate-fade-in">
-                Built strong. Made to endure.
+                {t('home.hero_title')}
               </h1>
 
               <p className="text-lg text-[#0a0906] leading-relaxed opacity-0 -translate-y-4 animate-fade-in delay-200">
-                We craft metal products that work hard and look good doing it.
-                From bathroom fixtures to cabinet hardware, every piece is
-                engineered for reliability.
+                {t('home.hero_description')}
               </p>
             </header>
 
@@ -37,7 +38,7 @@ const Header = () => {
                   transition-colors
                 "
               >
-                Browse
+                {t('home.browse')}
               </Button>
 
               <Button
@@ -52,7 +53,7 @@ const Header = () => {
                   transition-colors
                 "
               >
-                Learn more
+                {t('home.learn_more')}
               </Button>
 
             </div>
@@ -60,8 +61,8 @@ const Header = () => {
 
           <img
             className="flex-1 h-[640px] object-cover opacity-0 animate-fade-in delay-600"
-            alt="Placeholder"
-            src={logo}
+            alt="Header Image"
+            src={images[1]}
           />
         </article>
       </div>
@@ -70,3 +71,4 @@ const Header = () => {
 };
 
 export default Header;
+
