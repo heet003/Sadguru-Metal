@@ -1,4 +1,13 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #015C4B;
+  --color-secondary: #D7C7A6;
+  --color-accent: #C89F63;
+  --color-cream: #FAF8F3;
+}
+
+
 @layer utilities {
   @keyframes fade-in {
     0% {
