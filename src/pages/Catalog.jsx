@@ -161,7 +161,7 @@ function Catalog() {
                 </h3>
 
                 <p className="text-sm text-[#0a0906]/70 mb-4 line-clamp-2 flex-grow">
-                  {t(`catalog.product_desc_${product.productId.toLowerCase()}`)}
+                  {t(`catalog.product_desc_rk${product.productId}`)}
                 </p>
 
                 <div className="flex items-end justify-end mt-auto pt-4 border-t border-[#0a0906]/10">

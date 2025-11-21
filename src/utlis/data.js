@@ -45,7 +45,7 @@ export const products = [
     categoryName: "Hangers (Khuti)",
     products: [
       {
-        productId: "001",
+        productId: "101",
         productName: "RK-101",
         productDescription:
           "Durable metal wall hanger with multiple hooks for versatile use.",
@@ -66,7 +66,7 @@ export const products = [
         ],
       },
       {
-        productId: "002",
+        productId: "102",
         productName: "RK-102",
         productDescription:
           "Lightweight plastic coat hanger with a sleek design.",
@@ -92,7 +92,7 @@ export const products = [
         ],
       },
       {
-        productId: "003",
+        productId: "103",
         productName: "RK-103",
         productDescription:
           "Elegant wooden hanger perfect for jackets and coats.",
@@ -113,7 +113,7 @@ export const products = [
         ],
       },
       {
-        productId: "004",
+        productId: "104",
         productName: "RK-104",
         productDescription:
           "Elegant wooden hanger perfect for jackets and coats.",
@@ -139,7 +139,7 @@ export const products = [
     categoryName: "Cabinet Handle",
     products: [
       {
-        productId: "005",
+        productId: "105",
         productName: "RK-105",
         productDescription:
           "Sleek stainless steel cabinet handle with a brushed finish.",
@@ -160,7 +160,7 @@ export const products = [
         ],
       },
       {
-        productId: "006",
+        productId: "106",
         productName: "RK-106",
         productDescription:
           "Antique brass handle with a traditional vintage design.",
@@ -181,7 +181,7 @@ export const products = [
         ],
       },
       {
-        productId: "007",
+        productId: "107",
         productName: "RK-107",
         productDescription:
           "Modern square-shaped handle with a matte black finish.",
@@ -202,7 +202,7 @@ export const products = [
         ],
       },
       {
-        productId: "008",
+        productId: "108",
         productName: "RK-108",
         productDescription:
           "Curved chrome handle for cabinets, ideal for a sleek and modern look.",
@@ -228,8 +228,8 @@ export const products = [
     categoryName: "Knobs",
     products: [
       {
-        productId: "009",
-        productName: "RK-110",
+        productId: "109",
+        productName: "RK-109",
         productDescription:
           "Round ceramic knob with hand-painted floral design, ideal for drawers and cabinets.",
         price: 80,
@@ -249,8 +249,8 @@ export const products = [
         ],
       },
       {
-        productId: "010",
-        productName: "RK-111",
+        productId: "110",
+        productName: "RK-110",
         productDescription:
           "Vintage-style brass knob with an antique finish, suitable for all types of furniture.",
         price: 120,
@@ -270,8 +270,8 @@ export const products = [
         ],
       },
       {
-        productId: "011",
-        productName: "RK-112",
+        productId: "111",
+        productName: "RK-111",
         productDescription:
           "Glass crystal knob with a luxurious, sparkling finish, perfect for modern interiors.",
         price: 180,
@@ -291,8 +291,8 @@ export const products = [
         ],
       },
       {
-        productId: "012",
-        productName: "RK-113",
+        productId: "112",
+        productName: "RK-112",
         productDescription:
           "Minimalist wooden knob with a smooth matte finish, perfect for natural-themed decor.",
         price: 100,
