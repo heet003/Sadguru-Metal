@@ -9,9 +9,9 @@ function Catalog() {
 
   // Get all categories with product counts
   const categories = useMemo(() => {
-    return products.map(cat => ({
+    return products?.map(cat => ({
       name: cat.categoryName,
-      count: cat.products.length
+      count: cat.products?.length
     }));
   }, []);
 
@@ -20,24 +20,24 @@ function Catalog() {
     let allProducts = [];
 
     // Flatten all products with category info
-    products.forEach(category => {
-      category.products.forEach(product => {
-        allProducts.push({
+    products?.forEach(category => {
+      category?.products?.forEach(product => {
+        allProducts?.push({
           ...product,
-          categoryName: category.categoryName
+          categoryName: category?.categoryName
         });
       });
     });
 
     // Filter by category
     if (selectedCategory) {
-      allProducts = allProducts.filter(p => p.categoryName === selectedCategory);
+      allProducts = allProducts?.filter(p => p.categoryName === selectedCategory);
     }
 
     // Filter by search query
     if (searchQuery.trim()) {
       const query = searchQuery.toLowerCase();
-      allProducts = allProducts.filter(product =>
+      allProducts = allProducts?.filter(product =>
         product.productName.toLowerCase().includes(query) ||
         product.productDescription.toLowerCase().includes(query) ||
         product.categoryName.toLowerCase().includes(query)
@@ -77,7 +77,7 @@ function Catalog() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder={t('catalog.search_placeholder')}
-            className="w-full px-6 py-4 border border-[#0a0906] bg-white text-[#0a0906] placeholder-[#0a0906]/50 focus:outline-none focus:ring-2 focus:ring-[#0a0906]/20"
+            className="w-full px-4 py-2 rounded border border-[#0a0906] bg-white text-[#0a0906] placeholder-[#0a0906]/50 focus:outline-none focus:ring-2 focus:ring-[#0a0906]/20"
           />
           {searchQuery && (
             <button
@@ -96,33 +96,33 @@ function Catalog() {
           {/* All Categories Button */}
           <button
             onClick={() => setSelectedCategory(null)}
-            className={`px-6 py-4 border border-[#0a0906] transition-all ${selectedCategory === null
-                ? 'bg-[#0a0906] text-white'
-                : 'bg-white text-[#0a0906] hover:bg-gray-100'
+            className={`px-4 py-2 rounded-md cursor-pointer border border-[#0a0906] transition-all ${selectedCategory === null
+              ? 'bg-[#0a0906] text-white hover:bg-[#0a0906]/80'
+              : 'bg-white text-[#0a0906] hover:bg-gray-100'
               }`}
           >
             <div className="flex flex-col items-start">
               <span className="font-medium">{t('catalog.all_categories')}</span>
               <span className="text-sm opacity-70">
-                {t('catalog.products_count', { count: products.reduce((sum, cat) => sum + cat.products.length, 0) })}
+                {t('catalog.products_count', { count: products?.reduce((sum, cat) => sum + cat.products?.length, 0) })}
               </span>
             </div>
           </button>
 
           {/* Individual Category Buttons */}
-          {categories.map((category, index) => (
+          {categories?.map((category, index) => (
             <button
               key={index}
-              onClick={() => handleCategoryClick(category.name)}
-              className={`px-6 py-4 border border-[#0a0906] transition-all ${selectedCategory === category.name
-                  ? 'bg-[#0a0906] text-white'
-                  : 'bg-white text-[#0a0906] hover:bg-gray-100'
+              onClick={() => handleCategoryClick(category?.name)}
+              className={`px-4 py-2 rounded-md cursor-pointer border border-[#0a0906] transition-all ${selectedCategory === category?.name
+                ? 'bg-[#0a0906] text-white hover:bg-[#0a0906]/80'
+                : 'bg-white text-[#0a0906] hover:bg-gray-100'
                 }`}
             >
               <div className="flex flex-col items-start">
-                <span className="font-medium">{t(getCategoryTranslationKey(category.name))}</span>
+                <span className="font-medium">{t(getCategoryTranslationKey(category?.name))}</span>
                 <span className="text-sm opacity-70">
-                  {t('catalog.products_count', { count: category.count })}
+                  {t('catalog.products_count', { count: category?.count })}
                 </span>
               </div>
             </button>
@@ -131,19 +131,19 @@ function Catalog() {
       </div>
 
       {/* Products Grid */}
-      {filteredProducts.length > 0 ? (
+      {filteredProducts?.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {filteredProducts.map((product) => (
+          {filteredProducts?.map((product) => (
             <div
               key={product.productId}
-              className="flex flex-col border border-[#0a0906]/20 hover:border-[#0a0906] transition-all hover:shadow-lg group"
+              className="flex flex-col rounded-md p-2 border border-[#0a0906]/20 hover:border-gray-500 transition-all hover:shadow-lg group"
             >
               {/* Product Image */}
-              <div className="w-full h-64 bg-gray-100 overflow-hidden">
+              <div className="w-full h-64 rounded-md bg-gray-50 overflow-hidden">
                 <img
                   src={product.images[0]}
                   alt={product.productName}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300 cursor-pointer"
                   onError={(e) => {
                     e.target.src = './metal/1.png';
                   }}

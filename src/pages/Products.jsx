@@ -11,25 +11,25 @@ const Products = () => {
       title: t('products.chrome_towel_bar'),
       finish: t('products.polished'),
       price: "$48",
-      img: images[0],
+      img: images[6],
     },
     {
       title: t('products.brushed_door_handle'),
       finish: t('products.satin'),
       price: "$32",
-      img: images[1],
+      img: images[19],
     },
     {
       title: t('products.cabinet_knob_set'),
       finish: t('products.matte'),
       price: "$56",
-      img: images[2],
+      img: images[25],
     },
     {
       title: t('products.soap_dispenser'),
       finish: t('products.chrome'),
       price: "$42",
-      img: images[3],
+      img: images[14],
     },
     {
       title: t('products.mirror_frame_bar'),
@@ -64,7 +64,7 @@ const Products = () => {
             <img
               src={item?.img}
               alt={item?.title}
-              className="w-full h-[360px] object-cover rounded"
+              className="w-full h-[360px] object-contain rounded"
             />
 
             <h3 className="text-xl font-medium mt-6">{item?.title}</h3>

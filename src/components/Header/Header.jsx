@@ -7,9 +7,9 @@ const Header = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="flex flex-col items-center gap-20 px-12 py-16 bg-[#f2f2f2]">
-      <div className="flex flex-col max-w-7xl items-start justify-center gap-20 w-full">
-        <article className="flex w-full bg-white border border-[#0a090626]">
+    <section className="flex flex-col items-center gap-20">
+      <div className="flex flex-col max-w-full items-start justify-center gap-20 w-full">
+        <article className="flex w-full bg-white ">
           <div className="flex flex-col items-start justify-center gap-8 p-12 flex-1">
 
             {/* HEADER TEXT */}

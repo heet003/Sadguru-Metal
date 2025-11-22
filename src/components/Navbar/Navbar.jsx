@@ -13,7 +13,7 @@ const Navbar = () => {
     { code: 'gu', name: 'ગુજરાતી' }
   ];
 
-  const currentLang = languages.find(lang => lang.code === i18n.language) || languages[0];
+  const currentLang = languages.find(lang => lang?.code === i18n.language) || languages[0];
 
   const changeLanguage = (langCode) => {
     i18n.changeLanguage(langCode);
@@ -21,11 +21,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full bg-white flex items-center justify-between px-16 py-6 border-b border-[#0a090626]">
+    <nav className="w-full bg-white flex items-center justify-between px-16 py-6">
 
       {/* Logo */}
       <div className="text-3xl font-bold italic text-[#0a0906]">
-        <Link to="/">Logo</Link>
+        <Link to="/">SM</Link>
       </div>
 
       {/* Center Menu */}
@@ -39,9 +39,9 @@ const Navbar = () => {
       <div className="relative">
         <button
           onClick={() => setIsLangOpen(!isLangOpen)}
-          className="flex items-center gap-2 px-4 py-2 border border-[#0a0906] bg-white rounded-none hover:bg-gray-100 transition-colors"
+          className="flex items-center gap-2 px-4 py-2 border border-[#0a0906] bg-white rounded cursor-pointer hover:bg-gray-100 transition-colors"
         >
-          <span>{currentLang.name}</span>
+          <span>{currentLang?.name}</span>
           <svg
             width="14"
             height="14"
@@ -58,15 +58,15 @@ const Navbar = () => {
         </button>
 
         {isLangOpen && (
-          <div className="absolute right-0 mt-2 w-40 bg-white border border-[#0a0906] shadow-lg z-50">
+          <div className="absolute rounded-md p-1 right-0 mt-2 w-40 bg-white border border-[#0a0906] shadow-lg z-50">
             {languages.map((lang) => (
               <button
-                key={lang.code}
-                onClick={() => changeLanguage(lang.code)}
-                className={`w-full text-left px-4 py-2 hover:bg-gray-100 transition-colors ${i18n.language === lang.code ? 'bg-gray-200 font-semibold' : ''
+                key={lang?.code}
+                onClick={() => changeLanguage(lang?.code)}
+                className={`w-full rounded-md text-left px-4 py-2 hover:bg-gray-100 transition-colors ${i18n.language === lang?.code ? 'bg-gray-200 font-semibold' : ''
                   }`}
               >
-                {lang.name}
+                {lang?.name}
               </button>
             ))}
           </div>
