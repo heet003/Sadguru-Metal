@@ -179,8 +179,11 @@ function Catalog() {
                 </div>
 
                 <h3 className="text-lg font-semibold text-[#0a0906] mb-2">
-                  {product.productName}
+                  RK-{product.productId}
                 </h3>
+                <p className="text-md font-semibold text-[#0a0906] mb-2">
+                  {product.productName}
+                </p>
 
                 <p className="text-sm text-[#0a0906]/70 mb-4 line-clamp-2 flex-grow">
                   {t(`catalog.product_desc_rk${product.productId}`)}
