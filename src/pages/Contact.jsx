@@ -16,11 +16,10 @@ const Contact = () => {
 
       <div className="flex gap-20 items-start w-full">
 
-        <div className="flex flex-col gap-12 w-1/3">
+        <div className="flex flex-row w-full justify-between">
 
           <div className="flex flex-col gap-2">
-            <div className="text-2xl">✉️</div>
-            <h3 className="text-xl font-semibold">{t('contact.email')}</h3>
+            <div className="text-xl font-semibold">✉️ {t('contact.email')}</div>
             <p className="text-[#0a0906]/70">{t('contact.email_text')}</p>
             <a href="mailto:info@metalproducts.com" className="underline text-[#0a0906] hover:text-black">
               sadgurumetal45@gmail.com
@@ -28,8 +27,7 @@ const Contact = () => {
           </div>
 
           <div className="flex flex-col gap-2">
-            <div className="text-2xl">📞</div>
-            <h3 className="text-xl font-semibold">{t('contact.phone')}</h3>
+            <div className="text-xl font-semibold">📞 {t('contact.phone')}</div>
             <p className="text-[#0a0906]/70">{t('contact.phone_text')}</p>
             <a href="tel:+13035550147" className="underline text-[#0a0906] hover:text-black">
               +91 9712134409
@@ -37,8 +35,7 @@ const Contact = () => {
           </div>
 
           <div className="flex flex-col gap-2">
-            <div className="text-2xl">📍</div>
-            <h3 className="text-xl font-semibold">{t('contact.office')}</h3>
+            <div className="text-xl font-semibold">📍 {t('contact.office')}</div>
             <p className="text-[#0a0906]/70 leading-relaxed">
               Shree Hari Industry, Rajkot, Gujarat 360002, India
             </p>

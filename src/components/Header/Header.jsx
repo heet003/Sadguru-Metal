@@ -60,9 +60,9 @@ const Header = () => {
           </div>
 
           <img
-            className="flex-1 h-[640px] object-cover opacity-0 animate-fade-in delay-600"
+            className="flex-1 h-[540px] object-cover opacity-0 animate-fade-in delay-600"
             alt="Header Image"
-            src={images[1]}
+            src={images[4]}
           />
         </article>
       </div>
