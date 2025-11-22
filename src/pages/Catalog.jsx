@@ -1,11 +1,14 @@
 import React, { useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { products } from '../utlis/data';
+import ImageViewer from '../components/ImageViewer/ImageViewer';
 
 function Catalog() {
   const { t } = useTranslation();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedProductName, setSelectedProductName] = useState('');
 
   // Get all categories with product counts
   const categories = useMemo(() => {
@@ -72,12 +75,27 @@ function Catalog() {
 
         {/* Search Bar */}
         <div className="relative max-w-2xl">
+          {/* Search Icon */}
+          <svg
+            className="absolute left-4 top-1/2 -translate-y-1/2 text-[#0a0906]/50"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
           <input
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder={t('catalog.search_placeholder')}
-            className="w-full px-4 py-2 rounded border border-[#0a0906] bg-white text-[#0a0906] placeholder-[#0a0906]/50 focus:outline-none focus:ring-2 focus:ring-[#0a0906]/20"
+            className="w-full pl-12 pr-4 py-2 rounded border border-[#0a0906] bg-white text-[#0a0906] placeholder-[#0a0906]/50 focus:outline-none focus:ring-2 focus:ring-[#0a0906]/20"
           />
           {searchQuery && (
             <button
@@ -144,6 +162,10 @@ function Catalog() {
                   src={product.images[0]}
                   alt={product.productName}
                   className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300 cursor-pointer"
+                  onClick={() => {
+                    setSelectedImage(product.images[0]);
+                    setSelectedProductName(product.productName);
+                  }}
                   onError={(e) => {
                     e.target.src = './metal/1.png';
                   }}
@@ -192,6 +214,15 @@ function Catalog() {
             </button>
           )}
         </div>
+      )}
+
+      {/* Image Viewer Modal */}
+      {selectedImage && (
+        <ImageViewer
+          image={selectedImage}
+          productName={selectedProductName}
+          onClose={() => setSelectedImage(null)}
+        />
       )}
     </div>
   );

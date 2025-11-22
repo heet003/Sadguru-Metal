@@ -30,9 +30,24 @@ const Navbar = () => {
 
       {/* Center Menu */}
       <ul className="flex items-center gap-12 text-[#0a0906]">
-        <li><Link to="/products" className="hover:text-black/70">{t('nav.products')}</Link></li>
-        <li><Link to="/catalog" className="hover:text-black/70">{t('nav.catalog')}</Link></li>
-        <li><Link to="/contact" className="hover:text-black/70">{t('nav.contact')}</Link></li>
+        <li className="relative group">
+          <Link to="/products" className="relative py-2 transition-colors duration-300 group-hover:text-[#0a0906]">
+            {t('nav.products')}
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#0a0906] to-[#0a0906]/50 transition-all duration-300 group-hover:w-full"></span>
+          </Link>
+        </li>
+        <li className="relative group">
+          <Link to="/catalog" className="relative py-2 transition-colors duration-300 group-hover:text-[#0a0906]">
+            {t('nav.catalog')}
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#0a0906] to-[#0a0906]/50 transition-all duration-300 group-hover:w-full"></span>
+          </Link>
+        </li>
+        <li className="relative group">
+          <Link to="/contact" className="relative py-2 transition-colors duration-300 group-hover:text-[#0a0906]">
+            {t('nav.contact')}
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#0a0906] to-[#0a0906]/50 transition-all duration-300 group-hover:w-full"></span>
+          </Link>
+        </li>
       </ul>
 
       {/* Language Selector */}
