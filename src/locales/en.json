@@ -2,6 +2,7 @@
     "nav": {
         "products": "Products",
         "catalog": "Catalog",
+        "about": "About Us",
         "contact": "Contact Us"
     },
     "home": {
@@ -91,6 +92,26 @@
         "product_desc_rk414": "Heavy-duty furniture caster for easy mobility.",
         "product_desc_rk415": "Decorative door stopper to protect walls and furniture.",
         "product_desc_rk416": "Decorative key hook rack for entryway organization."
+    },
+    "about": {
+        "label": "About",
+        "title": "Who We Are",
+        "subtitle": "Crafting quality metal products with dedication and precision since decades.",
+        "story_title": "Our Story",
+        "story_text": "Sadguru Metal has been a trusted name in manufacturing premium metal products. What started as a small workshop in Rajkot, Gujarat, has grown into a leading supplier of quality metal hardware and fittings. Our journey has been driven by a commitment to excellence, innovation, and customer satisfaction.",
+        "mission_title": "Our Mission",
+        "mission_text": "We aim to provide superior quality metal products that combine functionality with aesthetic appeal. Our mission is to exceed customer expectations through continuous innovation, rigorous quality control, and exceptional service. Every product we create is a testament to our dedication to craftsmanship and reliability.",
+        "why_title": "Why Choose Us",
+        "quality_title": "Premium Quality",
+        "quality_text": "We use only the finest materials and employ rigorous quality control measures to ensure every product meets the highest standards.",
+        "experience_title": "Years of Experience",
+        "experience_text": "With decades of expertise in metal fabrication, we understand the nuances of creating durable and reliable products.",
+        "customization_title": "Custom Solutions",
+        "customization_text": "We offer customization options to meet your specific requirements, whether it's finish, size, or design modifications.",
+        "service_title": "Customer Service",
+        "service_text": "Our dedicated team is committed to providing exceptional support, from product selection to after-sales service.",
+        "values_title": "Our Values",
+        "values_text": "Integrity, quality, and customer satisfaction are at the core of everything we do. We believe in building long-term relationships with our clients through honest business practices, transparent communication, and consistent delivery of excellence. Our commitment to sustainable manufacturing practices ensures that we not only meet today's needs but also preserve resources for future generations."
     },
     "contact": {
         "reach_out": "Reach out",
