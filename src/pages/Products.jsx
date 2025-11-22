@@ -46,17 +46,17 @@ const Products = () => {
   ];
 
   return (
-    <section className="px-16 py-20 flex flex-col items-center text-[#0a0906]">
+    <section className="px-4 py-8 sm:px-8 sm:py-12 lg:px-16 lg:py-20 flex flex-col items-center text-[#0a0906]">
 
       {/* HEADER */}
       <p className="text-sm text-[#0a0906]/70 mb-2">{t('products.featured')}</p>
-      <h1 className="text-5xl font-semibold mb-4">{t('products.title')}</h1>
-      <p className="text-lg text-[#0a0906]/70 mb-16">
+      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-3 sm:mb-4">{t('products.title')}</h1>
+      <p className="text-base sm:text-lg text-[#0a0906]/70 mb-10 sm:mb-12 lg:mb-16 text-center max-w-2xl">
         {t('products.subtitle')}
       </p>
 
       {/* PRODUCT GRID */}
-      <div className="grid grid-cols-3 gap-16 w-full max-w-7xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 lg:gap-16 w-full max-w-7xl">
 
         {products.map((item, index) => (
           <div key={index} className="flex flex-col items-center text-center">
@@ -64,10 +64,10 @@ const Products = () => {
             <img
               src={item?.img}
               alt={item?.title}
-              className="w-full h-[360px] object-contain rounded"
+              className="w-full h-48 sm:h-64 lg:h-[360px] object-contain rounded"
             />
 
-            <h3 className="text-xl font-medium mt-6">{item?.title}</h3>
+            <h3 className="text-lg sm:text-xl font-medium mt-4 sm:mt-6">{item?.title}</h3>
 
             <p className="text-[#0a0906]/70 text-sm">{item?.finish}</p>
 
@@ -77,9 +77,9 @@ const Products = () => {
 
       </div>
 
-      <div className="mt-10">
+      <div className="mt-8 sm:mt-10">
         <Link to="/catalog">
-          <span className=" mt-16 px-6 py-2 border border-[#0a0906] bg-white rounded-none text-sm shadow-[0px_2px_2px_#0a090626,inset_0px_-4px_0px_#0a090626,inset_0px_3px_0px_#ffffff33] hover:bg-gray-100 transition-colors " >
+          <span className="mt-12 sm:mt-16 px-5 sm:px-6 py-2 border border-[#0a0906] bg-white rounded-none text-sm shadow-[0px_2px_2px_#0a090626,inset_0px_-4px_0px_#0a090626,inset_0px_3px_0px_#ffffff33] hover:bg-gray-100 transition-colors inline-block" >
             {t('products.view_catalog')}
           </span>
         </Link>

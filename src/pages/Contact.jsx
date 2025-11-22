@@ -5,21 +5,21 @@ const Contact = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="px-16 py-20 text-[#0a0906] w-full flex flex-col gap-16">
+    <section className="px-4 py-8 sm:px-8 sm:py-12 lg:px-16 lg:py-20 text-[#0a0906] w-full flex flex-col gap-12 sm:gap-14 lg:gap-16">
       <div>
-        <p className="text-md text-[#0a0906]/70 mb-2">{t('contact.reach_out')}</p>
-        <h1 className="text-5xl font-semibold mb-4">{t('contact.title')}</h1>
-        <p className="text-lg text-[#0a0906]/70 max-w-2xl">
+        <p className="text-sm sm:text-md text-[#0a0906]/70 mb-2">{t('contact.reach_out')}</p>
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-3 sm:mb-4">{t('contact.title')}</h1>
+        <p className="text-base sm:text-lg text-[#0a0906]/70 max-w-2xl">
           {t('contact.subtitle')}
         </p>
       </div>
 
-      <div className="flex gap-20 items-start w-full">
+      <div className="flex flex-col md:flex-row gap-8 sm:gap-12 lg:gap-20 items-start w-full">
 
-        <div className="flex flex-row w-full justify-between">
+        <div className="flex flex-col md:flex-row w-full justify-between gap-8 sm:gap-12">
 
           <div className="flex flex-col gap-2">
-            <div className="text-xl font-semibold">✉️ {t('contact.email')}</div>
+            <div className="text-lg sm:text-xl font-semibold">✉️ {t('contact.email')}</div>
             <p className="text-[#0a0906]/70">{t('contact.email_text')}</p>
             <a href="mailto:info@metalproducts.com" className="underline text-[#0a0906] hover:text-black">
               sadgurumetal45@gmail.com
@@ -27,7 +27,7 @@ const Contact = () => {
           </div>
 
           <div className="flex flex-col gap-2">
-            <div className="text-xl font-semibold">📞 {t('contact.phone')}</div>
+            <div className="text-lg sm:text-xl font-semibold">📞 {t('contact.phone')}</div>
             <p className="text-[#0a0906]/70">{t('contact.phone_text')}</p>
             <a href="tel:+13035550147" className="underline text-[#0a0906] hover:text-black">
               +91 9712134409
@@ -35,7 +35,7 @@ const Contact = () => {
           </div>
 
           <div className="flex flex-col gap-2">
-            <div className="text-xl font-semibold">📍 {t('contact.office')}</div>
+            <div className="text-lg sm:text-xl font-semibold">📍 {t('contact.office')}</div>
             <p className="text-[#0a0906]/70 leading-relaxed">
               Shree Hari Industry, Rajkot, Gujarat 360002, India
             </p>

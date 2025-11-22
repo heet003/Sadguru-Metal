@@ -62,12 +62,12 @@ function Catalog() {
   };
 
   return (
-    <div className="px-16 py-20">
+    <div className="px-4 py-8 sm:px-8 sm:py-12 lg:px-16 lg:py-20">
 
       {/* Header Section */}
-      <div className="mb-12">
-        <div className="flex justify-between items-start mb-4">
-          <h1 className="text-5xl font-semibold text-[#0a0906]">
+      <div className="mb-8 sm:mb-10 lg:mb-12">
+        <div className="flex flex-col sm:flex-row justify-between items-start gap-4 mb-4">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#0a0906]">
             {t('catalog.title')}
           </h1>
           
@@ -75,7 +75,7 @@ function Catalog() {
           <a
             href="/SadguruMetalPerex.pdf"
             download="SadguruMetalPerex.pdf"
-            className="flex items-center gap-2 px-6 py-3 bg-[#0a0906] text-white rounded-md hover:bg-[#0a0906]/80 transition-all shadow-md hover:shadow-lg"
+            className="flex items-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-[#0a0906] text-white rounded-md hover:bg-[#0a0906]/80 transition-all shadow-md hover:shadow-lg whitespace-nowrap"
           >
             <svg
               className="w-5 h-5"
@@ -91,15 +91,15 @@ function Catalog() {
                 d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
               />
             </svg>
-            <span className="font-medium">{t('catalog.download_catalog')}</span>
+            <span className="font-medium text-sm sm:text-base">{t('catalog.download_catalog')}</span>
           </a>
         </div>
-        <p className="text-lg text-[#0a0906]/70 mb-8">
+        <p className="text-base sm:text-lg text-[#0a0906]/70 mb-6 sm:mb-8">
           {t('catalog.subtitle')}
         </p>
 
         {/* Search Bar */}
-        <div className="relative max-w-2xl">
+        <div className="relative w-full sm:max-w-2xl">
           {/* Search Icon */}
           <svg
             className="absolute left-4 top-1/2 -translate-y-1/2 text-[#0a0906]/50"
@@ -120,7 +120,7 @@ function Catalog() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder={t('catalog.search_placeholder')}
-            className="w-full pl-12 pr-4 py-2 rounded border border-[#0a0906] bg-white text-[#0a0906] placeholder-[#0a0906]/50 focus:outline-none focus:ring-2 focus:ring-[#0a0906]/20"
+            className="w-full pl-12 pr-4 py-2.5 sm:py-2 rounded border border-[#0a0906] bg-white text-[#0a0906] placeholder-[#0a0906]/50 focus:outline-none focus:ring-2 focus:ring-[#0a0906]/20"
           />
           {searchQuery && (
             <button

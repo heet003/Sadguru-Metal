@@ -22,7 +22,7 @@ const Footer = () => {
 
   return (
     <motion.footer
-      className="relative bg-black text-lightYellow p-12 overflow-hidden"
+      className="relative bg-black text-lightYellow p-6 sm:p-8 md:p-12 overflow-hidden"
       whileInView="show"
       initial="hidden"
       variants={staggerContainer(0.2, 0.5)}
@@ -37,13 +37,13 @@ const Footer = () => {
       ></div>
 
       <motion.div
-        className="container mx-auto grid grid-cols-2 gap-8 relative z-10"
+        className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 relative z-10"
         whileInView="show"
         initial="hidden"
         variants={fadeIn("up", "tween", 0.2, 0.8)}
       >
         <motion.div
-          className="space-y-6"
+          className="space-y-4 sm:space-y-6 text-center md:text-left"
           whileInView="show"
           initial="hidden"
           variants={fadeIn("left", "spring", 0.3, 1)}
@@ -53,10 +53,10 @@ const Footer = () => {
             initial="hidden"
             variants={slideIn("left", "spring", 0.3, 1)}
           >
-            <span className="text-3xl font-bold">Sadguru Metal</span>
+            <span className="text-2xl sm:text-3xl font-bold">Sadguru Metal</span>
           </motion.div>
           <motion.div
-            className="space-y-2 text-base"
+            className="space-y-2 text-sm sm:text-base"
             whileInView="show"
             initial="hidden"
             variants={fadeIn("up", "tween", 0.4, 1)}
@@ -69,12 +69,12 @@ const Footer = () => {
         </motion.div>
 
         <motion.div
-          className="flex flex-col items-center space-y-6"
+          className="flex flex-col items-center space-y-4 sm:space-y-6"
           whileInView="show"
           initial="hidden"
           variants={fadeIn("up", "tween", 0.5, 1)}
         >
-          <motion.p className="text-xl font-semibold">Follow Us:</motion.p>
+          <motion.p className="text-lg sm:text-xl font-semibold">Follow Us:</motion.p>
 
           <motion.div
             className="flex space-x-6 text-2xl"
@@ -103,7 +103,7 @@ const Footer = () => {
           </motion.div>
 
           <motion.div
-            className="mt-4 text-base space-x-6"
+            className="mt-4 text-sm sm:text-base space-x-4 sm:space-x-6 text-center"
             whileInView="show"
             initial="hidden"
             variants={slideIn("up", "spring", 0.6, 1)}
@@ -125,13 +125,13 @@ const Footer = () => {
       </motion.div>
 
       <motion.div
-        className="mt-10 border-t border-lightYellow pt-6 flex justify-between items-center relative z-10"
+        className="mt-8 sm:mt-10 border-t border-lightYellow pt-4 sm:pt-6 flex justify-between items-center relative z-10"
         whileInView="show"
         initial="hidden"
         variants={slideIn("left", "tween", 0.5, 1)}
       ></motion.div>
       <motion.div
-        className="text-base text-left relative z-10"
+        className="text-sm sm:text-base text-center md:text-left relative z-10"
         whileInView="show"
         initial="hidden"
         variants={slideIn("right", "tween", 0.5, 1)}
