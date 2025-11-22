@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "../../ui/button";
 import { images } from "../../utlis/data";
 import { useTranslation } from 'react-i18next';
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -25,10 +26,10 @@ const Header = () => {
 
             {/* BUTTONS */}
             <div className="flex items-start gap-4 opacity-0 -translate-y-4 animate-fade-in delay-400">
-
-              {/* BROWSE BUTTON */}
-              <Button
-                className="
+              <Link to="/catalog">
+                <Button
+                  className="
+                  cursor-pointer
                   bg-[#cedee7]
                   px-6 py-2.5
                   border border-[#0a0906]
@@ -37,13 +38,15 @@ const Header = () => {
                   hover:bg-[#b8d4e0]
                   transition-colors
                 "
-              >
-                {t('home.browse')}
-              </Button>
-
-              <Button
-                variant="outline"
-                className="
+                >
+                  {t('home.browse')}
+                </Button>
+              </Link>
+              <Link to="/about">
+                <Button
+                  variant="outline"
+                  className="
+                  cursor-pointer
                   bg-[#f2f2f2]
                   px-6 py-2.5
                   border border-[#0a0906]
@@ -52,10 +55,10 @@ const Header = () => {
                   hover:bg-[#e5e5e5]
                   transition-colors
                 "
-              >
-                {t('home.learn_more')}
-              </Button>
-
+                >
+                  {t('home.learn_more')}
+                </Button>
+              </Link>
             </div>
           </div>
 

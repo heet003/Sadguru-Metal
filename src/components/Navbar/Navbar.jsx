@@ -48,6 +48,14 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="relative group">
+          <Link to="/about" className="relative py-2 transition-colors duration-300 group-hover:text-[#0a0906]">
+            {t('nav.about')}
+            <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#0a0906] to-[#0a0906]/50 transition-all duration-300 ${
+              location.pathname === '/about' ? 'w-full' : 'w-0 group-hover:w-full'
+            }`}></span>
+          </Link>
+        </li>
+        <li className="relative group">
           <Link to="/contact" className="relative py-2 transition-colors duration-300 group-hover:text-[#0a0906]">
             {t('nav.contact')}
             <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#0a0906] to-[#0a0906]/50 transition-all duration-300 ${
