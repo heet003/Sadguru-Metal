@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { Button } from "../../ui/button";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
+  const location = useLocation();
   const [isLangOpen, setIsLangOpen] = useState(false);
 
   const languages = [
@@ -33,19 +34,25 @@ const Navbar = () => {
         <li className="relative group">
           <Link to="/products" className="relative py-2 transition-colors duration-300 group-hover:text-[#0a0906]">
             {t('nav.products')}
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#0a0906] to-[#0a0906]/50 transition-all duration-300 group-hover:w-full"></span>
+            <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#0a0906] to-[#0a0906]/50 transition-all duration-300 ${
+              location.pathname === '/products' ? 'w-full' : 'w-0 group-hover:w-full'
+            }`}></span>
           </Link>
         </li>
         <li className="relative group">
           <Link to="/catalog" className="relative py-2 transition-colors duration-300 group-hover:text-[#0a0906]">
             {t('nav.catalog')}
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#0a0906] to-[#0a0906]/50 transition-all duration-300 group-hover:w-full"></span>
+            <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#0a0906] to-[#0a0906]/50 transition-all duration-300 ${
+              location.pathname === '/catalog' ? 'w-full' : 'w-0 group-hover:w-full'
+            }`}></span>
           </Link>
         </li>
         <li className="relative group">
           <Link to="/contact" className="relative py-2 transition-colors duration-300 group-hover:text-[#0a0906]">
             {t('nav.contact')}
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#0a0906] to-[#0a0906]/50 transition-all duration-300 group-hover:w-full"></span>
+            <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#0a0906] to-[#0a0906]/50 transition-all duration-300 ${
+              location.pathname === '/contact' ? 'w-full' : 'w-0 group-hover:w-full'
+            }`}></span>
           </Link>
         </li>
       </ul>
