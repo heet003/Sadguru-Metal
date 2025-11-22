@@ -1,13 +1,16 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="px-16 py-20 text-[#0a0906] w-full flex flex-col gap-16">
       <div>
-        <p className="text-sm text-[#0a0906]/70 mb-2">Reach out</p>
-        <h1 className="text-5xl font-semibold mb-4">Get in touch</h1>
+        <p className="text-md text-[#0a0906]/70 mb-2">{t('contact.reach_out')}</p>
+        <h1 className="text-5xl font-semibold mb-4">{t('contact.title')}</h1>
         <p className="text-lg text-[#0a0906]/70 max-w-2xl">
-          We're here to help with orders, questions, or custom requests.
+          {t('contact.subtitle')}
         </p>
       </div>
 
@@ -17,27 +20,27 @@ const Contact = () => {
 
           <div className="flex flex-col gap-2">
             <div className="text-2xl">✉️</div>
-            <h3 className="text-xl font-semibold">Email</h3>
-            <p className="text-[#0a0906]/70">Send us a message</p>
+            <h3 className="text-xl font-semibold">{t('contact.email')}</h3>
+            <p className="text-[#0a0906]/70">{t('contact.email_text')}</p>
             <a href="mailto:info@metalproducts.com" className="underline text-[#0a0906] hover:text-black">
-              info@metalproducts.com
+              sadgurumetal45@gmail.com
             </a>
           </div>
 
           <div className="flex flex-col gap-2">
             <div className="text-2xl">📞</div>
-            <h3 className="text-xl font-semibold">Phone</h3>
-            <p className="text-[#0a0906]/70">Call during business hours</p>
+            <h3 className="text-xl font-semibold">{t('contact.phone')}</h3>
+            <p className="text-[#0a0906]/70">{t('contact.phone_text')}</p>
             <a href="tel:+13035550147" className="underline text-[#0a0906] hover:text-black">
-              +1 (303) 555-0147
+              +91 9712134409
             </a>
           </div>
 
           <div className="flex flex-col gap-2">
             <div className="text-2xl">📍</div>
-            <h3 className="text-xl font-semibold">Office</h3>
+            <h3 className="text-xl font-semibold">{t('contact.office')}</h3>
             <p className="text-[#0a0906]/70 leading-relaxed">
-              2847 Industrial Boulevard, Denver, Colorado 80202
+              Shree Hari Industry, Rajkot, Gujarat 360002, India
             </p>
 
             {/* <a

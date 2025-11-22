@@ -1,70 +1,92 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "../../ui/button";
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
+  const { t, i18n } = useTranslation();
+  const [isLangOpen, setIsLangOpen] = useState(false);
+
+  const languages = [
+    { code: 'en', name: 'English' },
+    { code: 'hi', name: 'हिन्दी' },
+    { code: 'gu', name: 'ગુજરાતી' }
+  ];
+
+  const currentLang = languages.find(lang => lang?.code === i18n.language) || languages[0];
+
+  const changeLanguage = (langCode) => {
+    i18n.changeLanguage(langCode);
+    setIsLangOpen(false);
+  };
+
   return (
-    <nav className="w-full bg-white flex items-center justify-between px-16 py-6 border-b border-[#0a090626]">
-      
+    <nav className="w-full bg-white flex items-center justify-between px-16 py-6">
+
       {/* Logo */}
       <div className="text-3xl font-bold italic text-[#0a0906]">
-        <Link to="/">Logo</Link>
+        <Link to="/">SM</Link>
       </div>
 
       {/* Center Menu */}
       <ul className="flex items-center gap-12 text-[#0a0906]">
-        {/* <li><Link to="/about" className="hover:text-black/70">About Us</Link></li> */}
-        <li><Link to="/products" className="hover:text-black/70">Products</Link></li>
-        <li><Link to="/catalog" className="hover:text-black/70">Catalog</Link></li>
-        <li><Link to="/contact" className="hover:text-black/70">Contact Us</Link></li>
+        <li className="relative group">
+          <Link to="/products" className="relative py-2 transition-colors duration-300 group-hover:text-[#0a0906]">
+            {t('nav.products')}
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#0a0906] to-[#0a0906]/50 transition-all duration-300 group-hover:w-full"></span>
+          </Link>
+        </li>
+        <li className="relative group">
+          <Link to="/catalog" className="relative py-2 transition-colors duration-300 group-hover:text-[#0a0906]">
+            {t('nav.catalog')}
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#0a0906] to-[#0a0906]/50 transition-all duration-300 group-hover:w-full"></span>
+          </Link>
+        </li>
+        <li className="relative group">
+          <Link to="/contact" className="relative py-2 transition-colors duration-300 group-hover:text-[#0a0906]">
+            {t('nav.contact')}
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#0a0906] to-[#0a0906]/50 transition-all duration-300 group-hover:w-full"></span>
+          </Link>
+        </li>
+      </ul>
 
-        {/* <li className="cursor-pointer hover:text-black/70 flex items-center gap-1">
-          Resources
+      {/* Language Selector */}
+      <div className="relative">
+        <button
+          onClick={() => setIsLangOpen(!isLangOpen)}
+          className="flex items-center gap-2 px-4 py-2 border border-[#0a0906] bg-white rounded cursor-pointer hover:bg-gray-100 transition-colors"
+        >
+          <span>{currentLang?.name}</span>
           <svg
-            width="14"
-            height="14"
+            width="18"
+            height="18"
             viewBox="0 0 24 24"
             fill="none"
             stroke="#0a0906"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="mt-0.5"
+            className={`transition-transform ${isLangOpen ? 'rotate-180' : ''}`}
           >
             <polyline points="6 9 12 15 18 9" />
           </svg>
-        </li> */}
-      </ul>
+        </button>
 
-      {/* <div className="flex items-center gap-4">
-        <Button
-          variant="outline"
-          className="
-            bg-white 
-            px-6 py-2.5 
-            border border-[#0a0906]
-            shadow-[0px_2px_2px_#0a090626,inset_0px_-5px_0px_#0a090626,inset_0px_4px_0px_#ffffff33]
-            rounded-none
-            hover:bg-gray-100
-            transition-colors
-          "
-        >
-          Sign in
-        </Button>
-        <Button
-          className="
-            bg-[#cedee7] 
-            px-6 py-2.5 
-            border border-[#0a0906]
-            shadow-[0px_2px_2px_#0a090626,inset_0px_-5px_0px_#0a090626,inset_0px_4px_0px_#ffffff33]
-            rounded-none
-            hover:bg-[#b8d4e0]
-            transition-colors
-          "
-        >
-          Register
-        </Button>
-      </div> */}
+        {isLangOpen && (
+          <div className="absolute rounded-md p-1 right-0 mt-2 w-40 bg-white border border-[#0a0906] shadow-lg z-50">
+            {languages.map((lang) => (
+              <button
+                key={lang?.code}
+                onClick={() => changeLanguage(lang?.code)}
+                className={`w-full rounded-md text-left px-4 py-2 hover:bg-gray-100 transition-colors ${i18n.language === lang?.code ? 'bg-gray-200 font-semibold' : ''
+                  }`}
+              >
+                {lang?.name}
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
 
     </nav>
   );
