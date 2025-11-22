@@ -5,11 +5,11 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="px-16 py-20 text-[#0a0906] w-full flex flex-col gap-16">
+    <section className="px-4 py-8 sm:px-8 sm:py-12 lg:px-16 lg:py-20 text-[#0a0906] w-full flex flex-col gap-12 sm:gap-14 lg:gap-16">
       <div>
-        <p className="text-md text-[#0a0906]/70 mb-2">{t('about.label')}</p>
-        <h1 className="text-5xl font-semibold mb-4">{t('about.title')}</h1>
-        <p className="text-lg text-[#0a0906]/70 max-w-2xl">
+        <p className="text-sm sm:text-md text-[#0a0906]/70 mb-2">{t('about.label')}</p>
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-3 sm:mb-4">{t('about.title')}</h1>
+        <p className="text-base sm:text-lg text-[#0a0906]/70 max-w-2xl">
           {t('about.subtitle')}
         </p>
       </div>
