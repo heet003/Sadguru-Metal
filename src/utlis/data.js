@@ -63,8 +63,8 @@ export const products = [
     categoryName: "Cabinet Handles",
     products: [
       {
-        productId: "RK-1001",
-        productName: "Aluminum Profile Handle",
+        productId: "RK-201",
+        productName: "Cabinet Handle",
         productDescription: "Sleek stainless steel cabinet handle with a brushed finish. Perfect for modern kitchens.",
         images: ["./cabinetHandle/1.png"],
         variants: [
@@ -73,8 +73,8 @@ export const products = [
         ],
       },
       {
-        productId: "RK-1002",
-        productName: "Aluminum Profile Handle",
+        productId: "RK-202",
+        productName: "Cabinet Handle",
         productDescription: "Antique brass handle with a traditional vintage design. Adds classic elegance.",
         images: ["./cabinetHandle/2.png"],
         variants: [
@@ -83,8 +83,8 @@ export const products = [
         ],
       },
       {
-        productId: "RK-1003",
-        productName: "Aluminum Profile Handle",
+        productId: "RK-203",
+        productName: "Cabinet Handle",
         productDescription: "Modern square-shaped handle with a matte black finish. Contemporary and stylish.",
         images: ["./cabinetHandle/3.png"],
         variants: [
@@ -93,8 +93,8 @@ export const products = [
         ],
       },
       {
-        productId: "RK-1004",
-        productName: "Aluminum Profile Handle",
+        productId: "RK-204",
+        productName: "Cabinet Handle",
         productDescription: "Classic bar handle design suitable for all cabinet types. Timeless and versatile.",
         images: ["./cabinetHandle/4.png"],
         variants: [
@@ -103,8 +103,8 @@ export const products = [
         ],
       },
       {
-        productId: "RK-1005",
-        productName: "Aluminum Profile Handle",
+        productId: "RK-205",
+        productName: "Cabinet Handle",
         productDescription: "Premium luxury handle with superior finish and craftsmanship.",
         images: ["./cabinetHandle/5.png"],
         variants: [
@@ -113,8 +113,8 @@ export const products = [
         ],
       },
       {
-        productId: "RK-1006",
-        productName: "Aluminum Profile Handle",
+        productId: "RK-206",
+        productName: "Cabinet Handle",
         productDescription: "Industrial-style handle perfect for modern loft aesthetics.",
         images: ["./cabinetHandle/6.png"],
         variants: [
@@ -123,8 +123,8 @@ export const products = [
         ],
       },
       {
-        productId: "RK-1007",
-        productName: "Aluminum Profile Handle",
+        productId: "RK-207",
+        productName: "Cabinet Handle",
         productDescription: "Artistic handle design that combines functionality with aesthetic appeal.",
         images: ["./cabinetHandle/7.png"],
         variants: [
@@ -133,8 +133,8 @@ export const products = [
         ],
       },
       {
-        productId: "RK-1007",
-        productName: "Aluminum Profile Handle",
+        productId: "RK-208",
+        productName: "Cabinet Handle",
         productDescription: "Artistic handle design that combines functionality with aesthetic appeal.",
         images: ["./cabinetHandle/8.png"],
         variants: [
@@ -143,8 +143,8 @@ export const products = [
         ],
       },
       {
-        productId: "RK-1007",
-        productName: "Aluminum Profile Handle",
+        productId: "RK-209",
+        productName: "Cabinet Handle",
         productDescription: "Artistic handle design that combines functionality with aesthetic appeal.",
         images: ["./cabinetHandle/9.png"],
         variants: [
@@ -153,8 +153,8 @@ export const products = [
         ],
       },
       {
-        productId: "RK-1007",
-        productName: "Aluminum Profile Handle",
+        productId: "RK-210",
+        productName: "Cabinet Handle",
         productDescription: "Artistic handle design that combines functionality with aesthetic appeal.",
         images: ["./cabinetHandle/10.png"],
         variants: [
@@ -163,8 +163,8 @@ export const products = [
         ],
       },
       {
-        productId: "RK-1007",
-        productName: "Aluminum Profile Handle",
+        productId: "RK-211",
+        productName: "Cabinet Handle",
         productDescription: "Artistic handle design that combines functionality with aesthetic appeal.",
         images: ["./cabinetHandle/11.png"],
         variants: [
@@ -178,8 +178,8 @@ export const products = [
     categoryName: "Profile Handles",
     products: [
       {
-        productId: "RK-201",
-        productName: "Premium Cabinet Handle",
+        productId: "RK-1001",
+        productName: "Alumnium Profile Handle",
         productDescription: "Versatile hook suitable for various applications around the home.",
         images: ["./profileHandle/1.png"],
         variants: [
@@ -188,8 +188,8 @@ export const products = [
         ],
       },
       {
-        productId: "RK-402",
-        productName: "Premium Knob",
+        productId: "RK-1002",
+        productName: "Alumnium Profile Handle",
         productDescription: "Decorative bracket for shelving and architectural details.",
         images: ["./profileHandle/2.png"],
         variants: [
@@ -198,8 +198,8 @@ export const products = [
         ],
       },
       {
-        productId: "RK-405",
-        productName: "Cabinet Handle",
+        productId: "RK-1003",
+        productName: "Alumnium Profile Handle",
         productDescription: "Sturdy shelf support brackets for heavy-duty applications.",
         images: ["./profileHandle/3.png"],
         variants: [
@@ -208,8 +208,8 @@ export const products = [
         ],
       },
       {
-        productId: "RK-406",
-        productName: "Cabinet Handle",
+        productId: "RK-1004",
+        productName: "Alumnium Profile Handle",
         productDescription: "Stylish drawer pull with ergonomic design for easy grip.",
         images: ["./profileHandle/4.png"],
         variants: [
@@ -218,8 +218,8 @@ export const products = [
         ],
       },
       {
-        productId: "RK-215",
-        productName: "Cabinet Handle",
+        productId: "RK-1005",
+        productName: "Alumnium Profile Handle",
         productDescription: "Decorative furniture leg with classic design elements.",
         images: ["./profileHandle/5.png"],
         variants: [
@@ -228,8 +228,8 @@ export const products = [
         ],
       },
       {
-        productId: "RK-408",
-        productName: "Premium Knob",
+        productId: "RK-1006",
+        productName: "Alumnium Profile Handle",
         productDescription: "Premium quality hinge set for doors and cabinets.",
         images: ["./profileHandle/6.png"],
         variants: [
@@ -238,8 +238,8 @@ export const products = [
         ],
       },
       {
-        productId: "RK-409",
-        productName: "Premium Knob",
+        productId: "RK-1007",
+        productName: "Alumnium Profile Handle",
         productDescription: "Elegant towel ring for bathroom and kitchen use.",
         images: ["./profileHandle/7.png"],
         variants: [
@@ -253,7 +253,7 @@ export const products = [
     categoryName: "Knobs",
     products: [
       {
-        productId: "RK-303",
+        productId: "RK-301",
         productName: "Premium Knob",
         productDescription: "Glass crystal knob with a luxurious, sparkling finish, perfect for modern interiors.",
         images: ["./knob/1.png"],
@@ -263,7 +263,7 @@ export const products = [
         ],
       },
       {
-        productId: "RK-305",
+        productId: "RK-302",
         productName: "Premium Knob",
         productDescription: "Contemporary metal knob with clean lines and modern finish.",
         images: ["./knob/2.png"],
@@ -273,7 +273,7 @@ export const products = [
         ],
       },
       {
-        productId: "RK-308",
+        productId: "RK-303",
         productName: "Premium Knob",
         productDescription: "Rustic-style knob perfect for farmhouse and country-style interiors.",
         images: ["./knob/3.png"],
@@ -283,7 +283,7 @@ export const products = [
         ],
       },
       {
-        productId: "RK-309",
+        productId: "RK-304",
         productName: "Premium Knob",
         productDescription: "Modern geometric design knob for contemporary furniture.",
         images: ["./knob/4.png"],
@@ -293,7 +293,7 @@ export const products = [
         ],
       },
       {
-        productId: "RK-310",
+        productId: "RK-305",
         productName: "Premium Knob",
         productDescription: "Premium crystal knob with brilliant sparkle and elegant design.",
         images: ["./knob/5.png"],
@@ -303,7 +303,7 @@ export const products = [
         ],
       },
       {
-        productId: "RK-311",
+        productId: "RK-306",
         productName: "Premium Knob",
         productDescription: "Handcrafted artisan knob with unique character and charm.",
         images: ["./knob/6.png"],
@@ -313,7 +313,7 @@ export const products = [
         ],
       },
       {
-        productId: "RK-312",
+        productId: "RK-307",
         productName: "Premium Knob",
         productDescription: "Square-shaped knob with minimalist design for modern spaces.",
         images: ["./knob/7.png"],
@@ -323,7 +323,7 @@ export const products = [
         ],
       },
       {
-        productId: "RK-313",
+        productId: "RK-308",
         productName: "Premium Knob",
         productDescription: "Vintage ceramic knob with classic patterns and colors.",
         images: ["./knob/8.png"],
@@ -333,7 +333,7 @@ export const products = [
         ],
       },
       {
-        productId: "RK-315",
+        productId: "RK-309",
         productName: "Premium Knob",
         productDescription: "Elegant knob with pearl-like finish for a sophisticated look.",
         images: ["./knob/9.png"],
@@ -343,7 +343,7 @@ export const products = [
         ],
       },
       {
-        productId: "RK-316",
+        productId: "RK-310",
         productName: "Premium Knob",
         productDescription: "Contemporary design knob suitable for modern furniture pieces.",
         images: ["./knob/10.png"],
@@ -353,7 +353,7 @@ export const products = [
         ],
       },
       {
-        productId: "RK-317",
+        productId: "RK-311",
         productName: "Premium Knob",
         productDescription: "Designer knob with premium materials and exceptional craftsmanship.",
         images: ["./knob/11.png"],
@@ -363,7 +363,7 @@ export const products = [
         ],
       },
       {
-        productId: "RK-317",
+        productId: "RK-312",
         productName: "Premium Knob",
         productDescription: "Designer knob with premium materials and exceptional craftsmanship.",
         images: ["./knob/12.png"],
@@ -373,7 +373,7 @@ export const products = [
         ],
       },
       {
-        productId: "RK-317",
+        productId: "RK-313",
         productName: "Premium Knob",
         productDescription: "Designer knob with premium materials and exceptional craftsmanship.",
         images: ["./knob/13.png"],
@@ -388,7 +388,7 @@ export const products = [
     categoryName: "Hangers (Khuti)",
     products: [
       {
-        productId: "RK-109",
+        productId: "RK-106",
         productName: "Premium Hanger",
         productDescription: "Durable metal wall hanger with multiple hooks for versatile use. Perfect for entryways and bedrooms.",
         images: ["./hangers/1.png"],
@@ -398,7 +398,7 @@ export const products = [
         ],
       },
       {
-        productId: "RK-106",
+        productId: "RK-107",
         productName: "Premium Hanger",
         productDescription: "Elegant wooden hanger perfect for jackets and coats. Premium quality with natural finish.",
         images: ["./hangers/2.png"],
@@ -418,7 +418,7 @@ export const products = [
         ],
       },
       {
-        productId: "RK-108",
+        productId: "RK-109",
         productName: "Premium Hanger",
         productDescription: "Contemporary design with multiple hooks for organizing multiple items efficiently.",
         images: ["./hangers/4.png"],
@@ -428,7 +428,7 @@ export const products = [
         ],
       },
       {
-        productId: "RK-108",
+        productId: "RK-110",
         productName: "Premium Hanger",
         productDescription: "Contemporary design with multiple hooks for organizing multiple items efficiently.",
         images: ["./hangers/5.png"],
@@ -438,7 +438,7 @@ export const products = [
         ],
       },
       {
-        productId: "RK-108",
+        productId: "RK-111",
         productName: "Premium Hanger",
         productDescription: "Contemporary design with multiple hooks for organizing multiple items efficiently.",
         images: ["./hangers/6.png"],
@@ -453,8 +453,8 @@ export const products = [
     categoryName: "Other Accessories",
     products: [
       {
-        productId: "RK-403",
-        productName: "OTHERS",
+        productId: "RK-401",
+        productName: "Zinc Conceal Handle",
         productDescription: "Metal corner protector for furniture and architectural elements.",
         images: ["./others/1.png"],
         variants: [
