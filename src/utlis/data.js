@@ -60,10 +60,335 @@ export const images = [
 
 export const products = [
   {
+    categoryName: "Cabinet Handles",
+    products: [
+      {
+        productId: "RK-201",
+        productName: "Cabinet Handle",
+        productDescription: "Sleek stainless steel cabinet handle with a brushed finish. Perfect for modern kitchens.",
+        images: ["./cabinetHandle/1.png"],
+        variants: [
+          { color: "Silver", size: "Small", dimensions: "10cm x 2cm" },
+          { color: "Matte Black", size: "Medium", dimensions: "15cm x 3cm" },
+        ],
+      },
+      {
+        productId: "RK-202",
+        productName: "Cabinet Handle",
+        productDescription: "Antique brass handle with a traditional vintage design. Adds classic elegance.",
+        images: ["./cabinetHandle/2.png"],
+        variants: [
+          { color: "Antique Brass", size: "Medium", dimensions: "12cm x 4cm" },
+          { color: "Bronze", size: "Large", dimensions: "18cm x 5cm" },
+        ],
+      },
+      {
+        productId: "RK-203",
+        productName: "Cabinet Handle",
+        productDescription: "Modern square-shaped handle with a matte black finish. Contemporary and stylish.",
+        images: ["./cabinetHandle/3.png"],
+        variants: [
+          { color: "Matte Black", size: "Medium", dimensions: "14cm x 4cm" },
+          { color: "Satin Nickel", size: "Large", dimensions: "20cm x 5cm" },
+        ],
+      },
+      {
+        productId: "RK-204",
+        productName: "Cabinet Handle",
+        productDescription: "Classic bar handle design suitable for all cabinet types. Timeless and versatile.",
+        images: ["./cabinetHandle/4.png"],
+        variants: [
+          { color: "Stainless Steel", size: "Small", dimensions: "10cm x 2.5cm" },
+          { color: "Brushed Steel", size: "Medium", dimensions: "15cm x 3cm" },
+        ],
+      },
+      {
+        productId: "RK-205",
+        productName: "Cabinet Handle",
+        productDescription: "Premium luxury handle with superior finish and craftsmanship.",
+        images: ["./cabinetHandle/5.png"],
+        variants: [
+          { color: "Polished Gold", size: "Medium", dimensions: "14cm x 3.5cm" },
+          { color: "Rose Gold", size: "Large", dimensions: "18cm x 4.5cm" },
+        ],
+      },
+      {
+        productId: "RK-206",
+        productName: "Cabinet Handle",
+        productDescription: "Industrial-style handle perfect for modern loft aesthetics.",
+        images: ["./cabinetHandle/6.png"],
+        variants: [
+          { color: "Raw Steel", size: "Medium", dimensions: "15cm x 4cm" },
+          { color: "Black Steel", size: "Large", dimensions: "20cm x 5cm" },
+        ],
+      },
+      {
+        productId: "RK-207",
+        productName: "Cabinet Handle",
+        productDescription: "Artistic handle design that combines functionality with aesthetic appeal.",
+        images: ["./cabinetHandle/7.png"],
+        variants: [
+          { color: "Copper", size: "Medium", dimensions: "13cm x 3.5cm" },
+          { color: "Antique Copper", size: "Large", dimensions: "17cm x 4.5cm" },
+        ],
+      },
+      {
+        productId: "RK-208",
+        productName: "Cabinet Handle",
+        productDescription: "Artistic handle design that combines functionality with aesthetic appeal.",
+        images: ["./cabinetHandle/8.png"],
+        variants: [
+          { color: "Copper", size: "Medium", dimensions: "13cm x 3.5cm" },
+          { color: "Antique Copper", size: "Large", dimensions: "17cm x 4.5cm" },
+        ],
+      },
+      {
+        productId: "RK-209",
+        productName: "Cabinet Handle",
+        productDescription: "Artistic handle design that combines functionality with aesthetic appeal.",
+        images: ["./cabinetHandle/9.png"],
+        variants: [
+          { color: "Copper", size: "Medium", dimensions: "13cm x 3.5cm" },
+          { color: "Antique Copper", size: "Large", dimensions: "17cm x 4.5cm" },
+        ],
+      },
+      {
+        productId: "RK-210",
+        productName: "Cabinet Handle",
+        productDescription: "Artistic handle design that combines functionality with aesthetic appeal.",
+        images: ["./cabinetHandle/10.png"],
+        variants: [
+          { color: "Copper", size: "Medium", dimensions: "13cm x 3.5cm" },
+          { color: "Antique Copper", size: "Large", dimensions: "17cm x 4.5cm" },
+        ],
+      },
+      {
+        productId: "RK-211",
+        productName: "Cabinet Handle",
+        productDescription: "Artistic handle design that combines functionality with aesthetic appeal.",
+        images: ["./cabinetHandle/11.png"],
+        variants: [
+          { color: "Copper", size: "Medium", dimensions: "13cm x 3.5cm" },
+          { color: "Antique Copper", size: "Large", dimensions: "17cm x 4.5cm" },
+        ],
+      },
+    ],
+  },
+  {
+    categoryName: "Profile Handles",
+    products: [
+      {
+        productId: "RK-1001",
+        productName: "Alumnium Profile Handle",
+        productDescription: "Versatile hook suitable for various applications around the home.",
+        images: ["./profileHandle/1.png"],
+        variants: [
+          { color: "Chrome", size: "Small", dimensions: "5cm x 3cm" },
+          { color: "Matte Black", size: "Medium", dimensions: "7cm x 4cm" },
+        ],
+      },
+      {
+        productId: "RK-1002",
+        productName: "Alumnium Profile Handle",
+        productDescription: "Decorative bracket for shelving and architectural details.",
+        images: ["./profileHandle/2.png"],
+        variants: [
+          { color: "Antique Bronze", size: "Medium", dimensions: "15cm x 10cm" },
+          { color: "Black Iron", size: "Large", dimensions: "20cm x 15cm" },
+        ],
+      },
+      {
+        productId: "RK-1003",
+        productName: "Alumnium Profile Handle",
+        productDescription: "Sturdy shelf support brackets for heavy-duty applications.",
+        images: ["./profileHandle/3.png"],
+        variants: [
+          { color: "Chrome", size: "Medium", dimensions: "12cm x 8cm" },
+          { color: "Black", size: "Large", dimensions: "15cm x 10cm" },
+        ],
+      },
+      {
+        productId: "RK-1004",
+        productName: "Alumnium Profile Handle",
+        productDescription: "Stylish drawer pull with ergonomic design for easy grip.",
+        images: ["./profileHandle/4.png"],
+        variants: [
+          { color: "Brushed Nickel", size: "Small", dimensions: "8cm x 2cm" },
+          { color: "Polished Chrome", size: "Medium", dimensions: "10cm x 2.5cm" },
+        ],
+      },
+      {
+        productId: "RK-1005",
+        productName: "Alumnium Profile Handle",
+        productDescription: "Decorative furniture leg with classic design elements.",
+        images: ["./profileHandle/5.png"],
+        variants: [
+          { color: "Wood Finish", size: "Standard", dimensions: "20cm height" },
+          { color: "Black", size: "Tall", dimensions: "25cm height" },
+        ],
+      },
+      {
+        productId: "RK-1006",
+        productName: "Alumnium Profile Handle",
+        productDescription: "Premium quality hinge set for doors and cabinets.",
+        images: ["./profileHandle/6.png"],
+        variants: [
+          { color: "Stainless Steel", size: "Standard", dimensions: "10cm x 7cm" },
+          { color: "Brass", size: "Large", dimensions: "12cm x 9cm" },
+        ],
+      },
+      {
+        productId: "RK-1007",
+        productName: "Alumnium Profile Handle",
+        productDescription: "Elegant towel ring for bathroom and kitchen use.",
+        images: ["./profileHandle/7.png"],
+        variants: [
+          { color: "Chrome", size: "Standard", dimensions: "20cm diameter" },
+          { color: "Brushed Nickel", size: "Standard", dimensions: "20cm diameter" },
+        ],
+      },
+    ],
+  },
+  {
+    categoryName: "Knobs",
+    products: [
+      {
+        productId: "RK-301",
+        productName: "Premium Knob",
+        productDescription: "Glass crystal knob with a luxurious, sparkling finish, perfect for modern interiors.",
+        images: ["./knob/1.png"],
+        variants: [
+          { color: "Clear Glass", size: "Small", dimensions: "3cm x 3cm" },
+          { color: "Smoky Quartz", size: "Medium", dimensions: "4cm x 4cm" },
+        ],
+      },
+      {
+        productId: "RK-302",
+        productName: "Premium Knob",
+        productDescription: "Contemporary metal knob with clean lines and modern finish.",
+        images: ["./knob/2.png"],
+        variants: [
+          { color: "Brushed Nickel", size: "Small", dimensions: "3cm x 3cm" },
+          { color: "Matte Black", size: "Medium", dimensions: "3.5cm x 3.5cm" },
+        ],
+      },
+      {
+        productId: "RK-303",
+        productName: "Premium Knob",
+        productDescription: "Rustic-style knob perfect for farmhouse and country-style interiors.",
+        images: ["./knob/3.png"],
+        variants: [
+          { color: "Antique Iron", size: "Medium", dimensions: "4cm x 4cm" },
+          { color: "Weathered Brass", size: "Large", dimensions: "4.5cm x 4.5cm" },
+        ],
+      },
+      {
+        productId: "RK-304",
+        productName: "Premium Knob",
+        productDescription: "Modern geometric design knob for contemporary furniture.",
+        images: ["./knob/4.png"],
+        variants: [
+          { color: "Matte Black", size: "Small", dimensions: "3cm x 3cm" },
+          { color: "Brushed Gold", size: "Medium", dimensions: "3.5cm x 3.5cm" },
+        ],
+      },
+      {
+        productId: "RK-305",
+        productName: "Premium Knob",
+        productDescription: "Premium crystal knob with brilliant sparkle and elegant design.",
+        images: ["./knob/5.png"],
+        variants: [
+          { color: "Clear Crystal", size: "Medium", dimensions: "3.5cm x 3.5cm" },
+          { color: "Amber Crystal", size: "Large", dimensions: "4cm x 4cm" },
+        ],
+      },
+      {
+        productId: "RK-306",
+        productName: "Premium Knob",
+        productDescription: "Handcrafted artisan knob with unique character and charm.",
+        images: ["./knob/6.png"],
+        variants: [
+          { color: "Copper Patina", size: "Medium", dimensions: "3.5cm x 3.5cm" },
+          { color: "Verdigris", size: "Large", dimensions: "4cm x 4cm" },
+        ],
+      },
+      {
+        productId: "RK-307",
+        productName: "Premium Knob",
+        productDescription: "Square-shaped knob with minimalist design for modern spaces.",
+        images: ["./knob/7.png"],
+        variants: [
+          { color: "White", size: "Small", dimensions: "3cm x 3cm" },
+          { color: "Black", size: "Medium", dimensions: "3.5cm x 3.5cm" },
+        ],
+      },
+      {
+        productId: "RK-308",
+        productName: "Premium Knob",
+        productDescription: "Vintage ceramic knob with classic patterns and colors.",
+        images: ["./knob/8.png"],
+        variants: [
+          { color: "Cream & Gold", size: "Medium", dimensions: "3.5cm x 3.5cm" },
+          { color: "Green & Cream", size: "Large", dimensions: "4cm x 4cm" },
+        ],
+      },
+      {
+        productId: "RK-309",
+        productName: "Premium Knob",
+        productDescription: "Elegant knob with pearl-like finish for a sophisticated look.",
+        images: ["./knob/9.png"],
+        variants: [
+          { color: "Pearl White", size: "Medium", dimensions: "3.5cm x 3.5cm" },
+          { color: "Pearl Gray", size: "Large", dimensions: "4cm x 4cm" },
+        ],
+      },
+      {
+        productId: "RK-310",
+        productName: "Premium Knob",
+        productDescription: "Contemporary design knob suitable for modern furniture pieces.",
+        images: ["./knob/10.png"],
+        variants: [
+          { color: "Satin Nickel", size: "Small", dimensions: "3cm x 3cm" },
+          { color: "Oil-Rubbed Bronze", size: "Medium", dimensions: "3.5cm x 3.5cm" },
+        ],
+      },
+      {
+        productId: "RK-311",
+        productName: "Premium Knob",
+        productDescription: "Designer knob with premium materials and exceptional craftsmanship.",
+        images: ["./knob/11.png"],
+        variants: [
+          { color: "Polished Chrome", size: "Medium", dimensions: "3.5cm x 3.5cm" },
+          { color: "Brushed Brass", size: "Large", dimensions: "4cm x 4cm" },
+        ],
+      },
+      {
+        productId: "RK-312",
+        productName: "Premium Knob",
+        productDescription: "Designer knob with premium materials and exceptional craftsmanship.",
+        images: ["./knob/12.png"],
+        variants: [
+          { color: "Polished Chrome", size: "Medium", dimensions: "3.5cm x 3.5cm" },
+          { color: "Brushed Brass", size: "Large", dimensions: "4cm x 4cm" },
+        ],
+      },
+      {
+        productId: "RK-313",
+        productName: "Premium Knob",
+        productDescription: "Designer knob with premium materials and exceptional craftsmanship.",
+        images: ["./knob/13.png"],
+        variants: [
+          { color: "Polished Chrome", size: "Medium", dimensions: "3.5cm x 3.5cm" },
+          { color: "Brushed Brass", size: "Large", dimensions: "4cm x 4cm" },
+        ],
+      },
+    ],
+  },
+  {
     categoryName: "Hangers (Khuti)",
     products: [
       {
-        productId: "RK-109",
+        productId: "RK-106",
         productName: "Premium Hanger",
         productDescription: "Durable metal wall hanger with multiple hooks for versatile use. Perfect for entryways and bedrooms.",
         images: ["./hangers/1.png"],
@@ -75,19 +400,8 @@ export const products = [
       {
         productId: "RK-107",
         productName: "Premium Hanger",
-        productDescription: "Lightweight yet sturdy hanger with a sleek modern design. Ideal for coats and jackets.",
-        images: ["./hangers/2.png"],
-        variants: [
-          { color: "White", size: "Small", dimensions: "20cm x 5cm" },
-          { color: "Blue", size: "Medium", dimensions: "25cm x 7cm" },
-          { color: "Black", size: "Large", dimensions: "30cm x 10cm" },
-        ],
-      },
-      {
-        productId: "RK-106",
-        productName: "Premium Hanger",
         productDescription: "Elegant wooden hanger perfect for jackets and coats. Premium quality with natural finish.",
-        images: ["./hangers/3.png"],
+        images: ["./hangers/2.png"],
         variants: [
           { color: "Natural Wood", size: "Medium", dimensions: "35cm x 12cm" },
           { color: "Dark Wood", size: "Large", dimensions: "40cm x 15cm" },
@@ -97,6 +411,16 @@ export const products = [
         productId: "RK-108",
         productName: "Premium Hanger",
         productDescription: "Contemporary design with multiple hooks for organizing multiple items efficiently.",
+        images: ["./hangers/3.png"],
+        variants: [
+          { color: "Chrome", size: "Medium", dimensions: "35cm x 12cm" },
+          { color: "Matte Black", size: "Large", dimensions: "40cm x 15cm" },
+        ],
+      },
+      {
+        productId: "RK-109",
+        productName: "Premium Hanger",
+        productDescription: "Contemporary design with multiple hooks for organizing multiple items efficiently.",
         images: ["./hangers/4.png"],
         variants: [
           { color: "Chrome", size: "Medium", dimensions: "35cm x 12cm" },
@@ -104,478 +428,23 @@ export const products = [
         ],
       },
       {
-        productId: "RK-106",
-        productName: "Premium Hanger",
-        productDescription: "Vintage-inspired hanger with antique finish. Adds character to any room.",
-        images: ["./hangers/5.png"],
-        variants: [
-          { color: "Antique Brass", size: "Medium", dimensions: "32cm x 11cm" },
-          { color: "Bronze", size: "Large", dimensions: "38cm x 14cm" },
-        ],
-      },
-      {
-        productId: "RK-107",
-        productName: "Premium Hanger",
-        productDescription: "Simple and elegant design that complements modern interiors perfectly.",
-        images: ["./hangers/6.png"],
-        variants: [
-          { color: "White", size: "Small", dimensions: "25cm x 8cm" },
-          { color: "Silver", size: "Medium", dimensions: "30cm x 10cm" },
-        ],
-      },
-      {
         productId: "RK-110",
         productName: "Premium Hanger",
-        productDescription: "Extra strong hanger designed for heavy coats and winter wear.",
-        images: ["./hangers/7.png"],
+        productDescription: "Contemporary design with multiple hooks for organizing multiple items efficiently.",
+        images: ["./hangers/5.png"],
         variants: [
-          { color: "Black", size: "Large", dimensions: "45cm x 16cm" },
-          { color: "Steel Gray", size: "X-Large", dimensions: "50cm x 18cm" },
+          { color: "Chrome", size: "Medium", dimensions: "35cm x 12cm" },
+          { color: "Matte Black", size: "Large", dimensions: "40cm x 15cm" },
         ],
       },
       {
-        productId: "RK-108",
+        productId: "RK-111",
         productName: "Premium Hanger",
-        productDescription: "Ornate design with decorative elements. Functional art for your walls.",
-        images: ["./hangers/8.png"],
+        productDescription: "Contemporary design with multiple hooks for organizing multiple items efficiently.",
+        images: ["./hangers/6.png"],
         variants: [
-          { color: "Gold", size: "Medium", dimensions: "33cm x 12cm" },
-          { color: "Copper", size: "Large", dimensions: "38cm x 14cm" },
-        ],
-      },
-    ],
-  },
-  {
-    categoryName: "Profile Handles",
-    products: [
-      {
-        productId: "RK-1001",
-        productName: "Aluminum Profile Handle",
-        productDescription: "Sleek stainless steel cabinet handle with a brushed finish. Perfect for modern kitchens.",
-        images: ["./cabinteHandle/1.png"],
-        variants: [
-          { color: "Silver", size: "Small", dimensions: "10cm x 2cm" },
-          { color: "Matte Black", size: "Medium", dimensions: "15cm x 3cm" },
-        ],
-      },
-      {
-        productId: "RK-1002",
-        productName: "Aluminum Profile Handle",
-        productDescription: "Antique brass handle with a traditional vintage design. Adds classic elegance.",
-        images: ["./cabinteHandle/2.png"],
-        variants: [
-          { color: "Antique Brass", size: "Medium", dimensions: "12cm x 4cm" },
-          { color: "Bronze", size: "Large", dimensions: "18cm x 5cm" },
-        ],
-      },
-      {
-        productId: "RK-1003",
-        productName: "Aluminum Profile Handle",
-        productDescription: "Modern square-shaped handle with a matte black finish. Contemporary and stylish.",
-        images: ["./cabinteHandle/3.png"],
-        variants: [
-          { color: "Matte Black", size: "Medium", dimensions: "14cm x 4cm" },
-          { color: "Satin Nickel", size: "Large", dimensions: "20cm x 5cm" },
-        ],
-      },
-      // {
-      //   productId: "RK-204",
-      //   productName: "Curved Chrome Handle",
-      //   productDescription: "Curved chrome handle for cabinets, ideal for a sleek and modern look.",
-      //   images: ["./cabinteHandle/4.png"],
-      //   variants: [
-      //     { color: "Chrome", size: "Medium", dimensions: "16cm x 3cm" },
-      //     { color: "Brushed Nickel", size: "Large", dimensions: "20cm x 4cm" },
-      //   ],
-      // },
-      // {
-      //   productId: "RK-205",
-      //   productName: "Designer Handle",
-      //   productDescription: "Unique designer handle with contemporary styling. Makes a statement in any space.",
-      //   images: ["./cabinteHandle/5.png"],
-      //   variants: [
-      //     { color: "Polished Chrome", size: "Medium", dimensions: "13cm x 3.5cm" },
-      //     { color: "Black Chrome", size: "Large", dimensions: "17cm x 4.5cm" },
-      //   ],
-      // },
-      {
-        productId: "RK-1004",
-        productName: "Aluminum Profile Handle",
-        productDescription: "Classic bar handle design suitable for all cabinet types. Timeless and versatile.",
-        images: ["./cabinteHandle/6.png"],
-        variants: [
-          { color: "Stainless Steel", size: "Small", dimensions: "10cm x 2.5cm" },
-          { color: "Brushed Steel", size: "Medium", dimensions: "15cm x 3cm" },
-        ],
-      },
-      {
-        productId: "RK-1005",
-        productName: "Aluminum Profile Handle",
-        productDescription: "Premium luxury handle with superior finish and craftsmanship.",
-        images: ["./cabinteHandle/7.png"],
-        variants: [
-          { color: "Polished Gold", size: "Medium", dimensions: "14cm x 3.5cm" },
-          { color: "Rose Gold", size: "Large", dimensions: "18cm x 4.5cm" },
-        ],
-      },
-      {
-        productId: "RK-1006",
-        productName: "Aluminum Profile Handle",
-        productDescription: "Industrial-style handle perfect for modern loft aesthetics.",
-        images: ["./cabinteHandle/8.png"],
-        variants: [
-          { color: "Raw Steel", size: "Medium", dimensions: "15cm x 4cm" },
-          { color: "Black Steel", size: "Large", dimensions: "20cm x 5cm" },
-        ],
-      },
-      {
-        productId: "RK-1007",
-        productName: "Aluminum Profile Handle",
-        productDescription: "Artistic handle design that combines functionality with aesthetic appeal.",
-        images: ["./cabinteHandle/9.png"],
-        variants: [
-          { color: "Copper", size: "Medium", dimensions: "13cm x 3.5cm" },
-          { color: "Antique Copper", size: "Large", dimensions: "17cm x 4.5cm" },
-        ],
-      },
-    ],
-  },
-  {
-    categoryName: "Knobs",
-    products: [
-      {
-        productId: "RK-301",
-        productName: "Premium Knob",
-        productDescription: "Round ceramic knob with hand-painted floral design, ideal for drawers and cabinets.",
-        images: ["./knob/1.png"],
-        variants: [
-          { color: "White & Blue", size: "Small", dimensions: "3cm x 3cm" },
-          { color: "Green & White", size: "Medium", dimensions: "4cm x 4cm" },
-        ],
-      },
-      {
-        productId: "RK-302",
-        productName: "Premium Knob",
-        productDescription: "Vintage-style brass knob with an antique finish, suitable for all types of furniture.",
-        images: ["./knob/2.png"],
-        variants: [
-          { color: "Antique Brass", size: "Medium", dimensions: "3.5cm x 3.5cm" },
-          { color: "Bronze", size: "Large", dimensions: "4.5cm x 4.5cm" },
-        ],
-      },
-      {
-        productId: "RK-303",
-        productName: "Premium Knob",
-        productDescription: "Glass crystal knob with a luxurious, sparkling finish, perfect for modern interiors.",
-        images: ["./knob/3.png"],
-        variants: [
-          { color: "Clear Glass", size: "Small", dimensions: "3cm x 3cm" },
-          { color: "Smoky Quartz", size: "Medium", dimensions: "4cm x 4cm" },
-        ],
-      },
-      {
-        productId: "RK-304",
-        productName: "Premium Knob",
-        productDescription: "Minimalist wooden knob with a smooth matte finish, perfect for natural-themed decor.",
-        images: ["./knob/4.png"],
-        variants: [
-          { color: "Natural Wood", size: "Medium", dimensions: "4cm x 4cm" },
-          { color: "Dark Walnut", size: "Large", dimensions: "5cm x 5cm" },
-        ],
-      },
-      {
-        productId: "RK-305",
-        productName: "Premium Knob",
-        productDescription: "Contemporary metal knob with clean lines and modern finish.",
-        images: ["./knob/5.png"],
-        variants: [
-          { color: "Brushed Nickel", size: "Small", dimensions: "3cm x 3cm" },
-          { color: "Matte Black", size: "Medium", dimensions: "3.5cm x 3.5cm" },
-        ],
-      },
-      {
-        productId: "RK-306",
-        productName: "Premium Knob",
-        productDescription: "Beautifully decorated porcelain knob with intricate patterns.",
-        images: ["./knob/6.png"],
-        variants: [
-          { color: "Blue & White", size: "Medium", dimensions: "3.5cm x 3.5cm" },
-          { color: "Multicolor", size: "Large", dimensions: "4cm x 4cm" },
-        ],
-      },
-      // {
-      //   productId: "RK-307",
-      //   productName: "Classic Round Knob",
-      //   productDescription: "Classic round knob design that suits traditional and contemporary styles.",
-      //   images: ["./knob/7.png"],
-      //   variants: [
-      //     { color: "Chrome", size: "Small", dimensions: "3cm x 3cm" },
-      //     { color: "Polished Silver", size: "Medium", dimensions: "3.5cm x 3.5cm" },
-      //   ],
-      // },
-      {
-        productId: "RK-308",
-        productName: "Premium Knob",
-        productDescription: "Rustic-style knob perfect for farmhouse and country-style interiors.",
-        images: ["./knob/8.png"],
-        variants: [
-          { color: "Antique Iron", size: "Medium", dimensions: "4cm x 4cm" },
-          { color: "Weathered Brass", size: "Large", dimensions: "4.5cm x 4.5cm" },
-        ],
-      },
-      {
-        productId: "RK-309",
-        productName: "Premium Knob",
-        productDescription: "Modern geometric design knob for contemporary furniture.",
-        images: ["./knob/9.png"],
-        variants: [
-          { color: "Matte Black", size: "Small", dimensions: "3cm x 3cm" },
-          { color: "Brushed Gold", size: "Medium", dimensions: "3.5cm x 3.5cm" },
-        ],
-      },
-      {
-        productId: "RK-310",
-        productName: "Premium Knob",
-        productDescription: "Premium crystal knob with brilliant sparkle and elegant design.",
-        images: ["./knob/10.png"],
-        variants: [
-          { color: "Clear Crystal", size: "Medium", dimensions: "3.5cm x 3.5cm" },
-          { color: "Amber Crystal", size: "Large", dimensions: "4cm x 4cm" },
-        ],
-      },
-      {
-        productId: "RK-311",
-        productName: "Premium Knob",
-        productDescription: "Handcrafted artisan knob with unique character and charm.",
-        images: ["./knob/11.png"],
-        variants: [
-          { color: "Copper Patina", size: "Medium", dimensions: "3.5cm x 3.5cm" },
-          { color: "Verdigris", size: "Large", dimensions: "4cm x 4cm" },
-        ],
-      },
-      {
-        productId: "RK-312",
-        productName: "Premium Knob",
-        productDescription: "Square-shaped knob with minimalist design for modern spaces.",
-        images: ["./knob/12.png"],
-        variants: [
-          { color: "White", size: "Small", dimensions: "3cm x 3cm" },
-          { color: "Black", size: "Medium", dimensions: "3.5cm x 3.5cm" },
-        ],
-      },
-      {
-        productId: "RK-313",
-        productName: "Premium Knob",
-        productDescription: "Vintage ceramic knob with classic patterns and colors.",
-        images: ["./knob/13.png"],
-        variants: [
-          { color: "Cream & Gold", size: "Medium", dimensions: "3.5cm x 3.5cm" },
-          { color: "Green & Cream", size: "Large", dimensions: "4cm x 4cm" },
-        ],
-      },
-      // {
-      //   productId: "RK-314",
-      //   productName: "Industrial Metal Knob",
-      //   productDescription: "Industrial-style metal knob with raw finish for urban aesthetics.",
-      //   images: ["./knob/14.png"],
-      //   variants: [
-      //     { color: "Raw Steel", size: "Small", dimensions: "3cm x 3cm" },
-      //     { color: "Gunmetal", size: "Medium", dimensions: "3.5cm x 3.5cm" },
-      //   ],
-      // },
-      {
-        productId: "RK-315",
-        productName: "Premium Knob",
-        productDescription: "Elegant knob with pearl-like finish for a sophisticated look.",
-        images: ["./knob/15.png"],
-        variants: [
-          { color: "Pearl White", size: "Medium", dimensions: "3.5cm x 3.5cm" },
-          { color: "Pearl Gray", size: "Large", dimensions: "4cm x 4cm" },
-        ],
-      },
-      {
-        productId: "RK-316",
-        productName: "Premium Knob",
-        productDescription: "Contemporary design knob suitable for modern furniture pieces.",
-        images: ["./knob/16.png"],
-        variants: [
-          { color: "Satin Nickel", size: "Small", dimensions: "3cm x 3cm" },
-          { color: "Oil-Rubbed Bronze", size: "Medium", dimensions: "3.5cm x 3.5cm" },
-        ],
-      },
-      {
-        productId: "RK-317",
-        productName: "Premium Knob",
-        productDescription: "Designer knob with premium materials and exceptional craftsmanship.",
-        images: ["./knob/17.png"],
-        variants: [
-          { color: "Polished Chrome", size: "Medium", dimensions: "3.5cm x 3.5cm" },
-          { color: "Brushed Brass", size: "Large", dimensions: "4cm x 4cm" },
-        ],
-      },
-    ],
-  },
-  {
-    categoryName: "Cabinet Handles",
-    products: [
-      {
-        productId: "RK-201",
-        productName: "Premium Cabinet Handle",
-        productDescription: "Versatile hook suitable for various applications around the home.",
-        images: ["./others/1.png"],
-        variants: [
-          { color: "Chrome", size: "Small", dimensions: "5cm x 3cm" },
-          { color: "Matte Black", size: "Medium", dimensions: "7cm x 4cm" },
-        ],
-      },
-      {
-        productId: "RK-402",
-        productName: "Premium Knob",
-        productDescription: "Decorative bracket for shelving and architectural details.",
-        images: ["./others/2.png"],
-        variants: [
-          { color: "Antique Bronze", size: "Medium", dimensions: "15cm x 10cm" },
-          { color: "Black Iron", size: "Large", dimensions: "20cm x 15cm" },
-        ],
-      },
-      {
-        productId: "RK-403",
-        productName: "Zinc Hanger",
-        productDescription: "Metal corner protector for furniture and architectural elements.",
-        images: ["./others/3.png"],
-        variants: [
-          { color: "Brass", size: "Small", dimensions: "4cm x 4cm" },
-          { color: "Steel", size: "Medium", dimensions: "6cm x 6cm" },
-        ],
-      },
-      {
-        productId: "RK-202",
-        productName: "Cabinet Handle",
-        productDescription: "Secure cabinet lock mechanism with decorative finish.",
-        images: ["./others/4.png"],
-        variants: [
-          { color: "Silver", size: "Standard", dimensions: "8cm x 5cm" },
-          { color: "Antique Brass", size: "Standard", dimensions: "8cm x 5cm" },
-        ],
-      },
-      {
-        productId: "RK-405",
-        productName: "Cabinet Handle",
-        productDescription: "Sturdy shelf support brackets for heavy-duty applications.",
-        images: ["./others/5.png"],
-        variants: [
-          { color: "Chrome", size: "Medium", dimensions: "12cm x 8cm" },
-          { color: "Black", size: "Large", dimensions: "15cm x 10cm" },
-        ],
-      },
-      {
-        productId: "RK-406",
-        productName: "Cabinet Handle",
-        productDescription: "Stylish drawer pull with ergonomic design for easy grip.",
-        images: ["./others/6.png"],
-        variants: [
-          { color: "Brushed Nickel", size: "Small", dimensions: "8cm x 2cm" },
-          { color: "Polished Chrome", size: "Medium", dimensions: "10cm x 2.5cm" },
-        ],
-      },
-      {
-        productId: "RK-215",
-        productName: "Cabinet Handle",
-        productDescription: "Decorative furniture leg with classic design elements.",
-        images: ["./others/7.png"],
-        variants: [
-          { color: "Wood Finish", size: "Standard", dimensions: "20cm height" },
-          { color: "Black", size: "Tall", dimensions: "25cm height" },
-        ],
-      },
-      {
-        productId: "RK-408",
-        productName: "Premium Knob",
-        productDescription: "Premium quality hinge set for doors and cabinets.",
-        images: ["./others/8.png"],
-        variants: [
-          { color: "Stainless Steel", size: "Standard", dimensions: "10cm x 7cm" },
-          { color: "Brass", size: "Large", dimensions: "12cm x 9cm" },
-        ],
-      },
-      {
-        productId: "RK-409",
-        productName: "Premium Knob",
-        productDescription: "Elegant towel ring for bathroom and kitchen use.",
-        images: ["./others/9.png"],
-        variants: [
-          { color: "Chrome", size: "Standard", dimensions: "20cm diameter" },
-          { color: "Brushed Nickel", size: "Standard", dimensions: "20cm diameter" },
-        ],
-      },
-      {
-        productId: "RK-410",
-        productName: "Cabinet Handle",
-        productDescription: "Single or double robe hook for bathroom organization.",
-        images: ["./others/10.png"],
-        variants: [
-          { color: "Polished Chrome", size: "Single", dimensions: "5cm x 3cm" },
-          { color: "Matte Black", size: "Double", dimensions: "10cm x 3cm" },
-        ],
-      },
-      {
-        productId: "RK-411",
-        productName: "Cabinet Handle",
-        productDescription: "Wall-mounted paper holder with modern design.",
-        images: ["./others/11.png"],
-        variants: [
-          { color: "Chrome", size: "Standard", dimensions: "18cm x 5cm" },
-          { color: "Bronze", size: "Standard", dimensions: "18cm x 5cm" },
-        ],
-      },
-      {
-        productId: "RK-412",
-        productName: "Cabinet Handle",
-        productDescription: "Elegant soap dish holder for bathroom accessories.",
-        images: ["./others/12.png"],
-        variants: [
-          { color: "Brushed Steel", size: "Standard", dimensions: "12cm x 10cm" },
-          { color: "Chrome", size: "Standard", dimensions: "12cm x 10cm" },
-        ],
-      },
-      {
-        productId: "RK-214",
-        productName: "Cabinet Handle",
-        productDescription: "Sturdy curtain rod bracket with decorative finish.",
-        images: ["./others/13.png"],
-        variants: [
-          { color: "Antique Bronze", size: "Small", dimensions: "8cm x 6cm" },
-          { color: "Satin Nickel", size: "Medium", dimensions: "10cm x 8cm" },
-        ],
-      },
-      {
-        productId: "RK-211",
-        productName: "Cabinet Handle",
-        productDescription: "Heavy-duty furniture caster for easy mobility.",
-        images: ["./others/14.png"],
-        variants: [
-          { color: "Black", size: "2 inch", dimensions: "5cm diameter" },
-          { color: "Chrome", size: "3 inch", dimensions: "7.5cm diameter" },
-        ],
-      },
-      {
-        productId: "A-145",
-        productName: "Zinc conceal",
-        productDescription: "Decorative door stopper to protect walls and furniture.",
-        images: ["./others/15.png"],
-        variants: [
-          { color: "Brass", size: "Standard", dimensions: "6cm x 3cm" },
-          { color: "Chrome", size: "Standard", dimensions: "6cm x 3cm" },
-        ],
-      },
-      {
-        productId: "A-142",
-        productName: "Cabinet Handle",
-        productDescription: "Decorative key hook rack for entryway organization.",
-        images: ["./others/16.png"],
-        variants: [
-          { color: "Antique Iron", size: "4 Hooks", dimensions: "25cm x 8cm" },
-          { color: "Polished Brass", size: "6 Hooks", dimensions: "35cm x 8cm" },
+          { color: "Chrome", size: "Medium", dimensions: "35cm x 12cm" },
+          { color: "Matte Black", size: "Large", dimensions: "40cm x 15cm" },
         ],
       },
     ],
@@ -584,165 +453,15 @@ export const products = [
     categoryName: "Other Accessories",
     products: [
       {
-        productId: "RK-201",
-        productName: "Cabinet Handle",
-        productDescription: "Versatile hook suitable for various applications around the home.",
-        images: ["./others/1.png"],
-        variants: [
-          { color: "Chrome", size: "Small", dimensions: "5cm x 3cm" },
-          { color: "Matte Black", size: "Medium", dimensions: "7cm x 4cm" },
-        ],
-      },
-      {
-        productId: "RK-402",
-        productName: "Zinc Knob",
-        productDescription: "Decorative bracket for shelving and architectural details.",
-        images: ["./others/2.png"],
-        variants: [
-          { color: "Antique Bronze", size: "Medium", dimensions: "15cm x 10cm" },
-          { color: "Black Iron", size: "Large", dimensions: "20cm x 15cm" },
-        ],
-      },
-      {
-        productId: "RK-403",
-        productName: "Preminum Hanger",
+        productId: "RK-401",
+        productName: "Zinc Conceal Handle",
         productDescription: "Metal corner protector for furniture and architectural elements.",
-        images: ["./others/3.png"],
+        images: ["./others/1.png"],
         variants: [
           { color: "Brass", size: "Small", dimensions: "4cm x 4cm" },
           { color: "Steel", size: "Medium", dimensions: "6cm x 6cm" },
         ],
-      },
-      {
-        productId: "RK-202",
-        productName: "Cabinet Handle",
-        productDescription: "Secure cabinet lock mechanism with decorative finish.",
-        images: ["./others/4.png"],
-        variants: [
-          { color: "Silver", size: "Standard", dimensions: "8cm x 5cm" },
-          { color: "Antique Brass", size: "Standard", dimensions: "8cm x 5cm" },
-        ],
-      },
-      {
-        productId: "RK-405",
-        productName: "Cabinet Handle",
-        productDescription: "Sturdy shelf support brackets for heavy-duty applications.",
-        images: ["./others/5.png"],
-        variants: [
-          { color: "Chrome", size: "Medium", dimensions: "12cm x 8cm" },
-          { color: "Black", size: "Large", dimensions: "15cm x 10cm" },
-        ],
-      },
-      {
-        productId: "RK-406",
-        productName: "Cabinet Handle",
-        productDescription: "Stylish drawer pull with ergonomic design for easy grip.",
-        images: ["./others/6.png"],
-        variants: [
-          { color: "Brushed Nickel", size: "Small", dimensions: "8cm x 2cm" },
-          { color: "Polished Chrome", size: "Medium", dimensions: "10cm x 2.5cm" },
-        ],
-      },
-      {
-        productId: "RK-215",
-        productName: "Cabinet Handle",
-        productDescription: "Decorative furniture leg with classic design elements.",
-        images: ["./others/7.png"],
-        variants: [
-          { color: "Wood Finish", size: "Standard", dimensions: "20cm height" },
-          { color: "Black", size: "Tall", dimensions: "25cm height" },
-        ],
-      },
-      {
-        productId: "RK-408",
-        productName: "Premium Knob",
-        productDescription: "Premium quality hinge set for doors and cabinets.",
-        images: ["./others/8.png"],
-        variants: [
-          { color: "Stainless Steel", size: "Standard", dimensions: "10cm x 7cm" },
-          { color: "Brass", size: "Large", dimensions: "12cm x 9cm" },
-        ],
-      },
-      {
-        productId: "RK-409",
-        productName: "Premium Knob",
-        productDescription: "Elegant towel ring for bathroom and kitchen use.",
-        images: ["./others/9.png"],
-        variants: [
-          { color: "Chrome", size: "Standard", dimensions: "20cm diameter" },
-          { color: "Brushed Nickel", size: "Standard", dimensions: "20cm diameter" },
-        ],
-      },
-      {
-        productId: "RK-410",
-        productName: "Cabinet Handle",
-        productDescription: "Single or double robe hook for bathroom organization.",
-        images: ["./others/10.png"],
-        variants: [
-          { color: "Polished Chrome", size: "Single", dimensions: "5cm x 3cm" },
-          { color: "Matte Black", size: "Double", dimensions: "10cm x 3cm" },
-        ],
-      },
-      {
-        productId: "RK-411",
-        productName: "Cabinet Handle",
-        productDescription: "Wall-mounted paper holder with modern design.",
-        images: ["./others/11.png"],
-        variants: [
-          { color: "Chrome", size: "Standard", dimensions: "18cm x 5cm" },
-          { color: "Bronze", size: "Standard", dimensions: "18cm x 5cm" },
-        ],
-      },
-      {
-        productId: "RK-412",
-        productName: "Cabinet Handle",
-        productDescription: "Elegant soap dish holder for bathroom accessories.",
-        images: ["./others/12.png"],
-        variants: [
-          { color: "Brushed Steel", size: "Standard", dimensions: "12cm x 10cm" },
-          { color: "Chrome", size: "Standard", dimensions: "12cm x 10cm" },
-        ],
-      },
-      {
-        productId: "RK-214",
-        productName: "Cabinet Handle",
-        productDescription: "Sturdy curtain rod bracket with decorative finish.",
-        images: ["./others/13.png"],
-        variants: [
-          { color: "Antique Bronze", size: "Small", dimensions: "8cm x 6cm" },
-          { color: "Satin Nickel", size: "Medium", dimensions: "10cm x 8cm" },
-        ],
-      },
-      {
-        productId: "RK-211",
-        productName: "Cabinet Handle",
-        productDescription: "Heavy-duty furniture caster for easy mobility.",
-        images: ["./others/14.png"],
-        variants: [
-          { color: "Black", size: "2 inch", dimensions: "5cm diameter" },
-          { color: "Chrome", size: "3 inch", dimensions: "7.5cm diameter" },
-        ],
-      },
-      {
-        productId: "A-145",
-        productName: "Cabinet Handle",
-        productDescription: "Decorative door stopper to protect walls and furniture.",
-        images: ["./others/15.png"],
-        variants: [
-          { color: "Brass", size: "Standard", dimensions: "6cm x 3cm" },
-          { color: "Chrome", size: "Standard", dimensions: "6cm x 3cm" },
-        ],
-      },
-      {
-        productId: "A-142",
-        productName: "Cabinet Handle",
-        productDescription: "Decorative key hook rack for entryway organization.",
-        images: ["./others/16.png"],
-        variants: [
-          { color: "Antique Iron", size: "4 Hooks", dimensions: "25cm x 8cm" },
-          { color: "Polished Brass", size: "6 Hooks", dimensions: "35cm x 8cm" },
-        ],
-      },
+      }
     ],
   },
 ];
