@@ -204,7 +204,7 @@ function Catalog() {
                 </div>
 
                 <h3 className="text-lg font-semibold text-[#0a0906] mb-2">
-                  RK-{product.productId}
+                  {product.productId}
                 </h3>
                 <p className="text-md font-semibold text-[#0a0906] mb-2">
                   {product.productName}
