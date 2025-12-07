@@ -60,71 +60,6 @@ export const images = [
 
 export const products = [
   {
-    categoryName: "Hangers (Khuti)",
-    products: [
-      {
-        productId: "RK-109",
-        productName: "Premium Hanger",
-        productDescription: "Durable metal wall hanger with multiple hooks for versatile use. Perfect for entryways and bedrooms.",
-        images: ["./hangers/1.png"],
-        variants: [
-          { color: "Silver", size: "Medium", dimensions: "30cm x 10cm" },
-          { color: "Black", size: "Large", dimensions: "50cm x 15cm" },
-        ],
-      },
-      {
-        productId: "RK-106",
-        productName: "Premium Hanger",
-        productDescription: "Elegant wooden hanger perfect for jackets and coats. Premium quality with natural finish.",
-        images: ["./hangers/2.png"],
-        variants: [
-          { color: "Natural Wood", size: "Medium", dimensions: "35cm x 12cm" },
-          { color: "Dark Wood", size: "Large", dimensions: "40cm x 15cm" },
-        ],
-      },
-      {
-        productId: "RK-108",
-        productName: "Premium Hanger",
-        productDescription: "Contemporary design with multiple hooks for organizing multiple items efficiently.",
-        images: ["./hangers/3.png"],
-        variants: [
-          { color: "Chrome", size: "Medium", dimensions: "35cm x 12cm" },
-          { color: "Matte Black", size: "Large", dimensions: "40cm x 15cm" },
-        ],
-      },
-      {
-        productId: "RK-108",
-        productName: "Premium Hanger",
-        productDescription: "Contemporary design with multiple hooks for organizing multiple items efficiently.",
-        images: ["./hangers/4.png"],
-        variants: [
-          { color: "Chrome", size: "Medium", dimensions: "35cm x 12cm" },
-          { color: "Matte Black", size: "Large", dimensions: "40cm x 15cm" },
-        ],
-      },
-      {
-        productId: "RK-108",
-        productName: "Premium Hanger",
-        productDescription: "Contemporary design with multiple hooks for organizing multiple items efficiently.",
-        images: ["./hangers/5.png"],
-        variants: [
-          { color: "Chrome", size: "Medium", dimensions: "35cm x 12cm" },
-          { color: "Matte Black", size: "Large", dimensions: "40cm x 15cm" },
-        ],
-      },
-      {
-        productId: "RK-108",
-        productName: "Premium Hanger",
-        productDescription: "Contemporary design with multiple hooks for organizing multiple items efficiently.",
-        images: ["./hangers/6.png"],
-        variants: [
-          { color: "Chrome", size: "Medium", dimensions: "35cm x 12cm" },
-          { color: "Matte Black", size: "Large", dimensions: "40cm x 15cm" },
-        ],
-      },
-    ],
-  },
-  {
     categoryName: "Cabinet Handles",
     products: [
       {
@@ -235,6 +170,81 @@ export const products = [
         variants: [
           { color: "Copper", size: "Medium", dimensions: "13cm x 3.5cm" },
           { color: "Antique Copper", size: "Large", dimensions: "17cm x 4.5cm" },
+        ],
+      },
+    ],
+  },
+  {
+    categoryName: "Profile Handles",
+    products: [
+      {
+        productId: "RK-201",
+        productName: "Premium Cabinet Handle",
+        productDescription: "Versatile hook suitable for various applications around the home.",
+        images: ["./profileHandle/1.png"],
+        variants: [
+          { color: "Chrome", size: "Small", dimensions: "5cm x 3cm" },
+          { color: "Matte Black", size: "Medium", dimensions: "7cm x 4cm" },
+        ],
+      },
+      {
+        productId: "RK-402",
+        productName: "Premium Knob",
+        productDescription: "Decorative bracket for shelving and architectural details.",
+        images: ["./profileHandle/2.png"],
+        variants: [
+          { color: "Antique Bronze", size: "Medium", dimensions: "15cm x 10cm" },
+          { color: "Black Iron", size: "Large", dimensions: "20cm x 15cm" },
+        ],
+      },
+      {
+        productId: "RK-405",
+        productName: "Cabinet Handle",
+        productDescription: "Sturdy shelf support brackets for heavy-duty applications.",
+        images: ["./profileHandle/3.png"],
+        variants: [
+          { color: "Chrome", size: "Medium", dimensions: "12cm x 8cm" },
+          { color: "Black", size: "Large", dimensions: "15cm x 10cm" },
+        ],
+      },
+      {
+        productId: "RK-406",
+        productName: "Cabinet Handle",
+        productDescription: "Stylish drawer pull with ergonomic design for easy grip.",
+        images: ["./profileHandle/4.png"],
+        variants: [
+          { color: "Brushed Nickel", size: "Small", dimensions: "8cm x 2cm" },
+          { color: "Polished Chrome", size: "Medium", dimensions: "10cm x 2.5cm" },
+        ],
+      },
+      {
+        productId: "RK-215",
+        productName: "Cabinet Handle",
+        productDescription: "Decorative furniture leg with classic design elements.",
+        images: ["./profileHandle/5.png"],
+        variants: [
+          { color: "Wood Finish", size: "Standard", dimensions: "20cm height" },
+          { color: "Black", size: "Tall", dimensions: "25cm height" },
+        ],
+      },
+      {
+        productId: "RK-408",
+        productName: "Premium Knob",
+        productDescription: "Premium quality hinge set for doors and cabinets.",
+        images: ["./profileHandle/6.png"],
+        variants: [
+          { color: "Stainless Steel", size: "Standard", dimensions: "10cm x 7cm" },
+          { color: "Brass", size: "Large", dimensions: "12cm x 9cm" },
+        ],
+      },
+      {
+        productId: "RK-409",
+        productName: "Premium Knob",
+        productDescription: "Elegant towel ring for bathroom and kitchen use.",
+        images: ["./profileHandle/7.png"],
+        variants: [
+          { color: "Chrome", size: "Standard", dimensions: "20cm diameter" },
+          { color: "Brushed Nickel", size: "Standard", dimensions: "20cm diameter" },
         ],
       },
     ],
@@ -375,76 +385,66 @@ export const products = [
     ],
   },
   {
-    categoryName: "Profile Handles",
+    categoryName: "Hangers (Khuti)",
     products: [
       {
-        productId: "RK-201",
-        productName: "Premium Cabinet Handle",
-        productDescription: "Versatile hook suitable for various applications around the home.",
-        images: ["./profileHandle/1.png"],
+        productId: "RK-109",
+        productName: "Premium Hanger",
+        productDescription: "Durable metal wall hanger with multiple hooks for versatile use. Perfect for entryways and bedrooms.",
+        images: ["./hangers/1.png"],
         variants: [
-          { color: "Chrome", size: "Small", dimensions: "5cm x 3cm" },
-          { color: "Matte Black", size: "Medium", dimensions: "7cm x 4cm" },
+          { color: "Silver", size: "Medium", dimensions: "30cm x 10cm" },
+          { color: "Black", size: "Large", dimensions: "50cm x 15cm" },
         ],
       },
       {
-        productId: "RK-402",
-        productName: "Premium Knob",
-        productDescription: "Decorative bracket for shelving and architectural details.",
-        images: ["./profileHandle/2.png"],
+        productId: "RK-106",
+        productName: "Premium Hanger",
+        productDescription: "Elegant wooden hanger perfect for jackets and coats. Premium quality with natural finish.",
+        images: ["./hangers/2.png"],
         variants: [
-          { color: "Antique Bronze", size: "Medium", dimensions: "15cm x 10cm" },
-          { color: "Black Iron", size: "Large", dimensions: "20cm x 15cm" },
+          { color: "Natural Wood", size: "Medium", dimensions: "35cm x 12cm" },
+          { color: "Dark Wood", size: "Large", dimensions: "40cm x 15cm" },
         ],
       },
       {
-        productId: "RK-405",
-        productName: "Cabinet Handle",
-        productDescription: "Sturdy shelf support brackets for heavy-duty applications.",
-        images: ["./profileHandle/3.png"],
+        productId: "RK-108",
+        productName: "Premium Hanger",
+        productDescription: "Contemporary design with multiple hooks for organizing multiple items efficiently.",
+        images: ["./hangers/3.png"],
         variants: [
-          { color: "Chrome", size: "Medium", dimensions: "12cm x 8cm" },
-          { color: "Black", size: "Large", dimensions: "15cm x 10cm" },
+          { color: "Chrome", size: "Medium", dimensions: "35cm x 12cm" },
+          { color: "Matte Black", size: "Large", dimensions: "40cm x 15cm" },
         ],
       },
       {
-        productId: "RK-406",
-        productName: "Cabinet Handle",
-        productDescription: "Stylish drawer pull with ergonomic design for easy grip.",
-        images: ["./profileHandle/4.png"],
+        productId: "RK-108",
+        productName: "Premium Hanger",
+        productDescription: "Contemporary design with multiple hooks for organizing multiple items efficiently.",
+        images: ["./hangers/4.png"],
         variants: [
-          { color: "Brushed Nickel", size: "Small", dimensions: "8cm x 2cm" },
-          { color: "Polished Chrome", size: "Medium", dimensions: "10cm x 2.5cm" },
+          { color: "Chrome", size: "Medium", dimensions: "35cm x 12cm" },
+          { color: "Matte Black", size: "Large", dimensions: "40cm x 15cm" },
         ],
       },
       {
-        productId: "RK-215",
-        productName: "Cabinet Handle",
-        productDescription: "Decorative furniture leg with classic design elements.",
-        images: ["./profileHandle/5.png"],
+        productId: "RK-108",
+        productName: "Premium Hanger",
+        productDescription: "Contemporary design with multiple hooks for organizing multiple items efficiently.",
+        images: ["./hangers/5.png"],
         variants: [
-          { color: "Wood Finish", size: "Standard", dimensions: "20cm height" },
-          { color: "Black", size: "Tall", dimensions: "25cm height" },
+          { color: "Chrome", size: "Medium", dimensions: "35cm x 12cm" },
+          { color: "Matte Black", size: "Large", dimensions: "40cm x 15cm" },
         ],
       },
       {
-        productId: "RK-408",
-        productName: "Premium Knob",
-        productDescription: "Premium quality hinge set for doors and cabinets.",
-        images: ["./profileHandle/6.png"],
+        productId: "RK-108",
+        productName: "Premium Hanger",
+        productDescription: "Contemporary design with multiple hooks for organizing multiple items efficiently.",
+        images: ["./hangers/6.png"],
         variants: [
-          { color: "Stainless Steel", size: "Standard", dimensions: "10cm x 7cm" },
-          { color: "Brass", size: "Large", dimensions: "12cm x 9cm" },
-        ],
-      },
-      {
-        productId: "RK-409",
-        productName: "Premium Knob",
-        productDescription: "Elegant towel ring for bathroom and kitchen use.",
-        images: ["./profileHandle/7.png"],
-        variants: [
-          { color: "Chrome", size: "Standard", dimensions: "20cm diameter" },
-          { color: "Brushed Nickel", size: "Standard", dimensions: "20cm diameter" },
+          { color: "Chrome", size: "Medium", dimensions: "35cm x 12cm" },
+          { color: "Matte Black", size: "Large", dimensions: "40cm x 15cm" },
         ],
       },
     ],

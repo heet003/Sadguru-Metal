@@ -210,20 +210,20 @@ function Catalog() {
                   {product.productName}
                 </p>
 
-                <p className="text-sm text-[#0a0906]/70 mb-4 line-clamp-2 flex-grow">
+                {/* <p className="text-sm text-[#0a0906]/70 mb-4 line-clamp-2 grow">
                   {t(`catalog.product_desc_rk${product.productId}`)}
-                </p>
+                </p> */}
 
-                <div className="flex items-end justify-end mt-auto pt-4 border-t border-[#0a0906]/10">
-                  {/* <span className="text-xl font-semibold text-[#0a0906]">
+                {/* <div className="flex items-end justify-end mt-auto pt-4 border-t border-[#0a0906]/10">
+                  <span className="text-xl font-semibold text-[#0a0906]">
                     ₹{product.price}
-                  </span> */}
+                  </span>
                   {product.variants && (
                     <span className="text-xs text-[#0a0906]/50">
                       {product.variants.length} {t('catalog.variants')}
                     </span>
                   )}
-                </div>
+                </div> */}
               </div>
             </div>
           ))}
