@@ -43,6 +43,7 @@ function Catalog() {
       allProducts = allProducts?.filter(product =>
         product.productName.toLowerCase().includes(query) ||
         product.productDescription.toLowerCase().includes(query) ||
+        product.productId.toLowerCase().includes(query) ||
         product.categoryName.toLowerCase().includes(query)
       );
     }
