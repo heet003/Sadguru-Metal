@@ -43,6 +43,7 @@ function Catalog() {
       allProducts = allProducts?.filter(product =>
         product.productName.toLowerCase().includes(query) ||
         product.productDescription.toLowerCase().includes(query) ||
+        product.productId.toLowerCase().includes(query) ||
         product.categoryName.toLowerCase().includes(query)
       );
     }
@@ -70,7 +71,7 @@ function Catalog() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#0a0906]">
             {t('catalog.title')}
           </h1>
-          
+
           {/* Download Catalog Button */}
           <a
             href="/SadguruMetalPerex.pdf"
@@ -147,7 +148,7 @@ function Catalog() {
             <div className="flex flex-col items-start">
               <span className="font-medium">{t('catalog.all_categories')}</span>
               <span className="text-sm opacity-70">
-                {t('catalog.products_count', { count: products?.reduce((sum, cat) => sum + cat.products?.length, 0) })}
+                {products?.reduce((sum, cat) => sum + cat.products?.length, 0)} {t(`catalog.products`)}
               </span>
             </div>
           </button>
@@ -165,7 +166,7 @@ function Catalog() {
               <div className="flex flex-col items-start">
                 <span className="font-medium">{t(getCategoryTranslationKey(category?.name))}</span>
                 <span className="text-sm opacity-70">
-                  {t('catalog.products_count', { count: category?.count })}
+                  {category?.count} {t(`catalog.products`)}
                 </span>
               </div>
             </button>
@@ -198,7 +199,7 @@ function Catalog() {
               </div>
 
               {/* Product Info */}
-              <div className="p-4 flex flex-col flex-grow bg-white">
+              <div className="p-4 flex flex-col grow bg-white">
                 <div className="text-xs text-[#0a0906]/50 mb-2">
                   {t(getCategoryTranslationKey(product.categoryName))}
                 </div>

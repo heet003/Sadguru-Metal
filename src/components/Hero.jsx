@@ -43,7 +43,7 @@ const Hero = () => {
           <img
             src="./metal/5.png"
             alt="Metal Product"
-            className="w-full xl:w-[35rem] h-auto rounded-lg"
+            className="w-full xl:w-140 h-auto rounded-lg"
           />
         </motion.div>
       </motion.section>

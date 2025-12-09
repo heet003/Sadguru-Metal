@@ -8,40 +8,34 @@ const Products = () => {
 
   const products = [
     {
-      title: t('products.chrome_towel_bar'),
-      finish: t('products.polished'),
+      title: t('products.knob'),
       price: "$48",
       img: images[6],
     },
     {
-      title: t('products.brushed_door_handle'),
-      finish: t('products.satin'),
+      title: t('products.alu_pro_handle'),
       price: "$32",
       img: images[19],
     },
     {
-      title: t('products.cabinet_knob_set'),
-      finish: t('products.matte'),
+      title: t('products.knob'),
       price: "$56",
       img: images[25],
     },
     {
-      title: t('products.soap_dispenser'),
-      finish: t('products.chrome'),
+      title: t('products.cabinet_hanlde'),
       price: "$42",
       img: images[14],
     },
     {
-      title: t('products.mirror_frame_bar'),
-      finish: t('products.brushed'),
+      title: t('products.preminum_hanger'),
       price: "$64",
       img: images[4],
     },
     {
-      title: t('products.lever_door_handle'),
-      finish: t('products.polished'),
+      title: t('products.zinc_conceal'),
       price: "$38",
-      img: images[5],
+      img: images[48],
     },
   ];
 
@@ -68,9 +62,6 @@ const Products = () => {
             />
 
             <h3 className="text-lg sm:text-xl font-medium mt-4 sm:mt-6">{item?.title}</h3>
-
-            <p className="text-[#0a0906]/70 text-sm">{item?.finish}</p>
-
             {/* <p className="text-xl font-semibold mt-2">{item?.price}</p> */}
           </div>
         ))}

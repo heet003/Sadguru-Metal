@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button } from "../../ui/button";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
-
+import logo from '../../../public/logos/4.png'
 const Navbar = () => {
   const { t, i18n } = useTranslation();
   const location = useLocation();
@@ -32,7 +32,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <div className="text-2xl sm:text-3xl font-bold italic text-[#0a0906]">
-          <Link to="/">SM</Link>
+          <Link to="/"><img src={logo} alt="Sadguru Metal" className="w-32" /></Link>
         </div>
 
         {/* Desktop Menu - Hidden on mobile */}
@@ -40,33 +40,29 @@ const Navbar = () => {
           <li className="relative group">
             <Link to="/products" className="relative py-2 transition-colors duration-300 group-hover:text-[#0a0906]">
               {t('nav.products')}
-              <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#0a0906] to-[#0a0906]/50 transition-all duration-300 ${
-                location.pathname === '/products' ? 'w-full' : 'w-0 group-hover:w-full'
-              }`}></span>
+              <span className={`absolute bottom-0 left-0 h-0.5 bg-linear-to-r from-[#0a0906] to-[#0a0906]/50 transition-all duration-300 ${location.pathname === '/products' ? 'w-full' : 'w-0 group-hover:w-full'
+                }`}></span>
             </Link>
           </li>
           <li className="relative group">
             <Link to="/catalog" className="relative py-2 transition-colors duration-300 group-hover:text-[#0a0906]">
               {t('nav.catalog')}
-              <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#0a0906] to-[#0a0906]/50 transition-all duration-300 ${
-                location.pathname === '/catalog' ? 'w-full' : 'w-0 group-hover:w-full'
-              }`}></span>
+              <span className={`absolute bottom-0 left-0 h-0.5 bg-linear-to-r from-[#0a0906] to-[#0a0906]/50 transition-all duration-300 ${location.pathname === '/catalog' ? 'w-full' : 'w-0 group-hover:w-full'
+                }`}></span>
             </Link>
           </li>
           <li className="relative group">
             <Link to="/about" className="relative py-2 transition-colors duration-300 group-hover:text-[#0a0906]">
               {t('nav.about')}
-              <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#0a0906] to-[#0a0906]/50 transition-all duration-300 ${
-                location.pathname === '/about' ? 'w-full' : 'w-0 group-hover:w-full'
-              }`}></span>
+              <span className={`absolute bottom-0 left-0 h-0.5 bg-linear-to-r from-[#0a0906] to-[#0a0906]/50 transition-all duration-300 ${location.pathname === '/about' ? 'w-full' : 'w-0 group-hover:w-full'
+                }`}></span>
             </Link>
           </li>
           <li className="relative group">
             <Link to="/contact" className="relative py-2 transition-colors duration-300 group-hover:text-[#0a0906]">
               {t('nav.contact')}
-              <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#0a0906] to-[#0a0906]/50 transition-all duration-300 ${
-                location.pathname === '/contact' ? 'w-full' : 'w-0 group-hover:w-full'
-              }`}></span>
+              <span className={`absolute bottom-0 left-0 h-0.5 bg-linear-to-r from-[#0a0906] to-[#0a0906]/50 transition-all duration-300 ${location.pathname === '/contact' ? 'w-full' : 'w-0 group-hover:w-full'
+                }`}></span>
             </Link>
           </li>
         </ul>
@@ -127,7 +123,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Drawer */}
       <div className={`md:hidden fixed inset-0 bg-black/50 z-40 transition-opacity duration-300 ${isMobileMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} onClick={closeMobileMenu}></div>
-      
+
       <div className={`md:hidden fixed top-0 right-0 h-full w-64 bg-white shadow-2xl z-50 transform transition-transform duration-300 ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         <div className="flex flex-col h-full">
           {/* Mobile Menu Header */}
@@ -148,8 +144,8 @@ const Navbar = () => {
           <nav className="flex-1 overflow-y-auto">
             <ul className="flex flex-col p-4">
               <li className="border-b border-gray-100">
-                <Link 
-                  to="/products" 
+                <Link
+                  to="/products"
                   onClick={closeMobileMenu}
                   className={`block py-4 px-2 text-lg transition-colors ${location.pathname === '/products' ? 'text-[#0a0906] font-semibold' : 'text-[#0a0906]/70'} hover:text-[#0a0906]`}
                 >
@@ -157,8 +153,8 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="border-b border-gray-100">
-                <Link 
-                  to="/catalog" 
+                <Link
+                  to="/catalog"
                   onClick={closeMobileMenu}
                   className={`block py-4 px-2 text-lg transition-colors ${location.pathname === '/catalog' ? 'text-[#0a0906] font-semibold' : 'text-[#0a0906]/70'} hover:text-[#0a0906]`}
                 >
@@ -166,8 +162,8 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="border-b border-gray-100">
-                <Link 
-                  to="/about" 
+                <Link
+                  to="/about"
                   onClick={closeMobileMenu}
                   className={`block py-4 px-2 text-lg transition-colors ${location.pathname === '/about' ? 'text-[#0a0906] font-semibold' : 'text-[#0a0906]/70'} hover:text-[#0a0906]`}
                 >
@@ -175,8 +171,8 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="border-b border-gray-100">
-                <Link 
-                  to="/contact" 
+                <Link
+                  to="/contact"
                   onClick={closeMobileMenu}
                   className={`block py-4 px-2 text-lg transition-colors ${location.pathname === '/contact' ? 'text-[#0a0906] font-semibold' : 'text-[#0a0906]/70'} hover:text-[#0a0906]`}
                 >

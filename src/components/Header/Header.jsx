@@ -61,9 +61,9 @@ const Header = () => {
           </div>
 
           <img
-            className="w-full lg:w-1/2 h-64 sm:h-80 lg:h-[540px] object-cover opacity-0 animate-fade-in delay-600"
+            className="w-full lg:w-1/2 h-64 sm:h-80 lg:h-[540px] object-contain opacity-0 animate-fade-in delay-600"
             alt="Header Image"
-            src={images[4]}
+            src={images[49]}
           />
         </article>
       </div>
